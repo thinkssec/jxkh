@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhUnlockModel" table="PERFO_KH_UNLOCK">
+        
+			<id name="SID" column="SID" type="string">			
+        
+      </id>
+			<property name="KHID" column="KHID" type="int" />
+			<property name="CZZ" column="CZZ" type="string" />
+			<property name="CZZLX" column="CZZLX" type="string" />
+			<property name="TJSJ" column="TJSJ" type="DateTime" />
+			<property name="SDBZ" column="SDBZ" type="string" />
+      <property name="JGBM" column="JGBM" type="int" />
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+      
+    </class>
+</hibernate-mapping>

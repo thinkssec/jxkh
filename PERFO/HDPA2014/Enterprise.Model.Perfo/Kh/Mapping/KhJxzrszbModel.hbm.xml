@@ -1,0 +1,47 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhJxzrszbModel" table="PERFO_KH_JXZRSZB">
+        
+			<id name="ZRSZBID" column="ZRSZBID" type="string">			</id>
+			<property name="LHZBBM" column="LHZBBM" type="string" />
+			<property name="DFZBBM" column="DFZBBM" type="string" />
+			<property name="ZRSID" column="ZRSID" type="int" />
+			<property name="ZSZND" column="ZSZND" type="int" />
+			<property name="ZZBQZ" column="ZZBQZ" type="decimal" />
+			<property name="ZZBFZ" column="ZZBFZ" type="decimal" />
+			<property name="ZXSXH" column="ZXSXH" type="int" />
+			<property name="ZNCMBZ" column="ZNCMBZ" type="decimal" />
+			<property name="ZNZMBZ" column="ZNZMBZ" type="decimal" />
+			<property name="ZNMMBZ" column="ZNMMBZ" type="decimal" />
+			<property name="ZMBZ" column="ZMBZ" type="decimal" />
+			<property name="ZZBDH" column="ZZBDH" type="string" />
+			<property name="ZZBXZ" column="ZZBXZ" type="string" />
+			<property name="ZJSGXS" column="ZJSGXS" type="string" />
+			<property name="ZSJZB" column="ZSJZB" type="string" />
+			<property name="ZTJRQ" column="ZTJRQ" type="DateTime" />
+			<property name="ZJGBM" column="ZJGBM" type="int" />
+      <property name="BBMC" column="BBMC" type="string" />
+      <property name="MBZBZ" column="MBZBZ" type="string" />
+      <property name="JGKHNR" column="JGKHNR" type="string" />
+      <property name="JGKHMB" column="JGKHMB" type="string" />
+      <property name="JGWCSJ" column="JGWCSJ" type="string" />
+      <property name="JGPFBZ" column="JGPFBZ" type="string" />
+      
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="ZJGBM" />
+      </many-to-one>
+
+      <many-to-one name="Jxzrs" class="Enterprise.Model.Perfo.Kh.KhJxzrsModel" lazy='false' insert="false" update="false">
+        <column name="ZRSID" />
+      </many-to-one>
+
+      <many-to-one name="Lhzb" class="Enterprise.Model.Perfo.Zbk.ZbkLhzbModel" lazy='false' insert="false" update="false">
+        <column name="LHZBBM" />
+      </many-to-one>
+
+      <many-to-one name="Dfzb" class="Enterprise.Model.Perfo.Zbk.ZbkDfzbModel" lazy='false' insert="false" update="false">
+        <column name="DFZBBM" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

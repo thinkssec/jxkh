@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhTjbModel" table="PERFO_KH_TJB">
+        
+			<id name="KHID" column="KHID" type="int">			</id>
+			<property name="WTB" column="WTB" type="int" />
+			<property name="WTJ" column="WTJ" type="int" />
+			<property name="SJTB" column="SJTB" type="int" />
+			<property name="WJTJ" column="WJTJ" type="int" />
+			<property name="YSH" column="YSH" type="int" />
+			<property name="YSD" column="YSD" type="int" />
+			<property name="KHJD" column="KHJD" type="int" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+			<property name="BY1" column="BY1" type="string" />
+			<property name="BY2" column="BY2" type="string" />
+			<property name="BY3" column="BY3" type="string" />
+			<property name="BY4" column="BY4" type="string" />
+
+    </class>
+</hibernate-mapping>

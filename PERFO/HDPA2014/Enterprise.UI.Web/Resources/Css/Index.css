@@ -1,0 +1,365 @@
+﻿Td {
+    height: 20px;
+}
+
+.td-right {
+    text-align: right;
+    height: 16px;
+}
+
+.td-bold {
+    font-weight: bold;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+li {
+    height: 30px;
+}
+
+.label-default {
+    background-color: #999999;
+}
+
+    .label-default[href]:hover,
+    .label-default[href]:focus {
+        background-color: #808080;
+    }
+
+.label-primary {
+    background-color: #2fa4e7;
+}
+
+    .label-primary[href]:hover,
+    .label-primary[href]:focus {
+        background-color: #178acc;
+    }
+
+.label-success {
+    background-color: #73a839;
+}
+
+    .label-success[href]:hover,
+    .label-success[href]:focus {
+        background-color: #59822c;
+    }
+
+.label-info {
+    background-color: #033c73;
+}
+
+    .label-info[href]:hover,
+    .label-info[href]:focus {
+        background-color: #022241;
+    }
+
+.label-warning {
+    background-color: #dd5600;
+}
+
+    .label-warning[href]:hover,
+    .label-warning[href]:focus {
+        background-color: #aa4200;
+    }
+
+.label-danger {
+    background-color: #c71c22;
+}
+
+    .label-danger[href]:hover,
+    .label-danger[href]:focus {
+        background-color: #9a161a;
+    }
+
+
+.green {
+    color: #458746;
+}
+
+.red {
+    color: #b94846;
+}
+
+.yellow {
+    color: #f99406;
+}
+
+.blue {
+    color: #3986ac;
+}
+
+.show span {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    width: 70px;
+    zoom: 1;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+.progress {
+    overflow: hidden;
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #2fa4e7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-transition: width 0.6s ease;
+    -o-transition: width 0.6s ease;
+    transition: width 0.6s ease;
+}
+
+.progress-striped .progress-bar, .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+}
+
+.progress.active .progress-bar, .progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar[aria-valuenow="1"],
+.progress-bar[aria-valuenow="2"] {
+    min-width: 30px;
+}
+
+.progress-bar[aria-valuenow="0"] {
+    color: #999999;
+    min-width: 30px;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
+
+.progress-bar-success {
+    background-color: #73a839;
+}
+
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-info {
+    background-color: #033c73;
+}
+
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, gba(255,255,255,0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-warning {
+    background-color: #dd5600;
+}
+
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-danger {
+    background-color: #c71c22;
+}
+
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.15) 75%, transparent 75%, transparent);
+}
+
+/*----------------------------------------
+考核流程指引
+-----------------------------------------*/
+.ssec-i-24, .ssec-ic-16, .ssec-ic {
+    background-repeat: no-repeat;
+}
+
+    .ssec-ic.ic-calendar-view-day {
+        background-image: url(/Resources/images/calendar_view_day.png);
+    }
+
+    .ssec-ic.ic-report_key {
+        background-image: url(/Resources/images/report_key.png);
+    }
+
+    .ssec-ic.ic-user_edit {
+        background-image: url(/Resources/images/user_edit.png);
+    }
+
+    .ssec-ic.ic-select {
+        background-image: url(/Resources/images/calendar_view_week.png);
+    }
+
+    .ssec-ic.ic-accept {
+        background-image: url(/Resources/images/arrow_right.png);
+    }
+
+    .ssec-ic.ic-judgement {
+        background-image: url(/Resources/images/document_mark_as_final.png);
+    }
+
+.ssec-report-container {
+    width: 100%;
+    font-size: 14px;
+}
+
+.ssec-report {
+    width: 130px;
+    margin: 8px 1%;
+    height: 50px;
+    float: left;
+    cursor: pointer; /*% !important;min-width:170px */
+    display: block;
+    text-decoration: none;
+    color: #323232;
+    background: #ffffff url(/Resources/images/ssec-report-bg.png) repeat-x;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+}
+
+    .ssec-report:hover {
+        background-color: #fafafa;
+    }
+
+.mws-report:active {
+    background-image: none; /* CSS 3 */
+    -webkit-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -o-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    -khtml-box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+}
+
+.ssec-report .ssec-report-icon {
+    width: 48px;
+    height: 100%;
+    float: left;
+    display: block;
+    border-right: 1px solid #cccccc;
+    background-position: center center;
+}
+
+.ssec-report .ssec-report-content {
+    margin-left: 49px;
+    display: block;
+    padding: 8px 10px;
+}
+
+    .ssec-report .ssec-report-content .ssec-report-title {
+        white-space: nowrap;
+    }
+
+    .ssec-report .ssec-report-content .ssec-report-value {
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+        .ssec-report .ssec-report-content .ssec-report-value.accept {
+            background: url(/Resources/images/arrow_right.png) no-repeat right center;
+            padding-right: 24px;
+        }
+
+.ssec-report-value.acceptOK {
+    background: url(/Resources/images/accept.png) no-repeat right center;
+    padding-right: 24px;
+}
+
+.notaccept {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.box {
+    padding: 5px;
+    font-size: 12px;
+    margin: 0 auto;
+}

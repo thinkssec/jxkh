@@ -1,0 +1,34 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhXsModel" table="PERFO_KH_XS">
+        
+			<id name="DEPTID" column="DEPTID" type="int">			</id>
+			<property name="JIGUAN" column="JIGUAN" type="int" />
+			<property name="JIGUANX" column="JIGUANX" type="decimal" />
+			<property name="YUNXINGJIZU" column="YUNXINGJIZU" type="int" />
+			<property name="YUNXINGJIZUX" column="YUNXINGJIZUX" type="decimal" />
+			<property name="REBEIJIZU" column="REBEIJIZU" type="int" />
+			<property name="REBEIJIZUX" column="REBEIJIZUX" type="decimal" />
+			<property name="LENGBEIJIZU" column="LENGBEIJIZU" type="int" />
+			<property name="LENGBEIJIZUX" column="LENGBEIJIZUX" type="decimal" />
+			<property name="DAXINGSHUQIZHAN" column="DAXINGSHUQIZHAN" type="int" />
+			<property name="DAXINGSHUQIZHANX" column="DAXINGSHUQIZHANX" type="decimal" />
+			<property name="XIAOXINGSHUQIZHAN" column="XIAOXINGSHUQIZHAN" type="int" />
+			<property name="XIAOXINGSHUQIZHANX" column="XIAOXINGSHUQIZHANX" type="decimal" />
+			<property name="GONGLISHU" column="GONGLISHU" type="decimal" />
+			<property name="GONGLISHUX" column="GONGLISHUX" type="decimal" />
+			<property name="DIMAO" column="DIMAO" type="decimal" />
+			<property name="DIMAOX" column="DIMAOX" type="decimal" />
+			<property name="CHENGZHENHUA" column="CHENGZHENHUA" type="decimal" />
+			<property name="CHENGZHENHUAX" column="CHENGZHENHUAX" type="decimal" />
+			<property name="FENDUI" column="FENDUI" type="int" />
+			<property name="FENDUIX" column="FENDUIX" type="decimal" />
+			<property name="WEIXIUD" column="WEIXIUD" type="int" />
+			<property name="WEIXIUDX" column="WEIXIUDX" type="decimal" />
+			<property name="BZ" column="BZ" type="string" />
+			<property name="BZX" column="BZX" type="string" />
+			<property name="XS" column="XS" type="decimal" />
+			<property name="ZJXS" column="ZJXS" type="decimal" />
+
+    </class>
+</hibernate-mapping>

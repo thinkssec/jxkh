@@ -1,0 +1,16 @@
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Model.Perfo.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Model.Perfo.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Component.Cache.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Component.Infrastructure.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\log4net.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\FredCK.FCKeditorV2.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Microsoft.Practices.Unity.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Component.Cache.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\bin\Release\Enterprise.Component.Infrastructure.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\obj\Release\Enterprise.Model.Perfo.csprojResolveAssemblyReference.cache
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\obj\Release\Enterprise.Model.Perfo.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Model.Perfo\obj\Release\Enterprise.Model.Perfo.pdb

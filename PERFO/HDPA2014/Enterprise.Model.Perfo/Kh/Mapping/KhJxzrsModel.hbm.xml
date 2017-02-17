@@ -1,0 +1,39 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhJxzrsModel" table="PERFO_KH_JXZRS">
+        
+			<id name="ZRSID" column="ZRSID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="ZRSMC" column="ZRSMC" type="string" />
+			<property name="ZRSZT" column="ZRSZT" type="string" />
+			<property name="SZND" column="SZND" type="int" />
+			<property name="ZRSFJ" column="ZRSFJ" type="string" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+			<property name="FZBM" column="FZBM" type="int" />
+			<property name="XDRQ" column="XDRQ" type="DateTime" />
+      <property name="LXID" column="LXID" type="string" />
+      
+      <bag name="JxzrszbLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="ZRSID" />
+        </key>
+        <one-to-many class="KhJxzrszbModel" not-found="ignore"/>
+      </bag>
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+      <many-to-one name="FzBmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="FZBM" />
+      </many-to-one>
+
+      <many-to-one name="KhKind" class="KhKindModel" lazy='false' insert="false" update="false">
+        <column name="LXID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

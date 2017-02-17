@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysRolepermissionModel" table="PERFO_SYS_ROLEPERMISSION">
+        
+		<composite-id>
+			<key-property name="ROLEID" column="ROLEID" type="string" />
+			<key-property name="MID" column="MID" type="string" />
+		</composite-id>
+			<property name="MODULEPERMISSION" column="MODULEPERMISSION" type="int" />
+
+      <many-to-one name="Role" class="SysRoleModel" lazy='false' insert="false" update="false">
+        <column name="ROLEID" />
+      </many-to-one>
+
+      <many-to-one name="Module" class="SysModuleModel" lazy='false' insert="false" update="false">
+        <column name="MID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

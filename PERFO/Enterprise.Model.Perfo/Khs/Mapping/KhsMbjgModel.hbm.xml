@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Khs">
+    <class name="KhsMbjgModel" table="PERFO_KHS_MBJG">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="KHDZBID" column="KHDZBID" type="string" />
+			<property name="MBID" column="MBID" type="string" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="PX" column="PX" type="decimal" />
+			<property name="FNAMES" column="FNAMES" type="string" />
+			<property name="FVIEWNAMES" column="FVIEWNAMES" type="string" />
+			<property name="STATUS" column="STATUS" type="string" />
+			<property name="KEY1" column="KEY1" type="string" />
+			<property name="KEY2" column="KEY2" type="string" />
+			<property name="KEY3" column="KEY3" type="string" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysBmjgModel" table="PERFO_SYS_BMJG">
+        
+			<id name="JGBM" column="JGBM" type="int">			</id>
+			<property name="JGMC" column="JGMC" type="string" />
+			<property name="JGLX" column="JGLX" type="string" />
+			<property name="SFKH" column="SFKH" type="string" />
+			<property name="XSXH" column="XSXH" type="string" />
+			<property name="BZ" column="BZ" type="string" />
+      <property name="PX" column="PX" type="int" />
+      <property name="PID" column="PID" type="int" />
+    </class>
+</hibernate-mapping>

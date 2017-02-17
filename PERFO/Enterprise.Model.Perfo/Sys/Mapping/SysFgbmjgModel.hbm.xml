@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysFgbmjgModel" table="PERFO_SYS_FGBMJG">
+        
+		<composite-id>
+			<key-property name="JGBM" column="JGBM" type="int" />
+			<key-property name="LOGINID" column="LOGINID" type="string" />
+		</composite-id>
+
+    </class>
+</hibernate-mapping>

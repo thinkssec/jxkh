@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Enterprise.Component.Cache</name>
+    </assembly>
+    <members>
+        <member name="T:Enterprise.Component.Cache.ClearEventHandler">
+            <summary>
+            缓存清除-事件委托
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:Enterprise.Component.Cache.CacheEventArgs">
+            <summary>
+            委托传递的事件参数
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheEventArgs._CacheClassKey">
+            <summary>
+            实例参数
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheEventArgs.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.CacheHelper">
+            <summary>
+            文件名:  CacheHelper.cs
+            功能描述: 缓存操作方法类
+            创建人：Caitou
+            创建日期: 2012.9
+            
+            修改人：qw
+            修改日期: 2013.1.24
+            修改内容：分离自定义刷新动作类，添加自动加载数据功能。
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheHelper.cache">
+            <summary>
+            缓存对象
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheHelper.cacheKeys">
+            <summary>
+            缓存项名称集合
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.GetCacheKeys">
+            <summary>
+            获取缓存项名称集合对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Add(System.Type,System.Boolean,System.Object[],System.String,System.Object[],System.String,System.Object)">
+            <summary>
+            添加缓存操作
+            </summary>
+            <param name="_T">类类型</param>
+            <param name="_LoadMode">自动加载</param>
+            <param name="_ConstuctParms">构造方法参数</param>
+            <param name="_MethodName">调用方法名称</param>
+            <param name="_MethodParameters">调用方法参数</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Add(System.String,System.Object)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Add(System.String,System.Object,Enterprise.Component.Cache.CacheItemRefreshAction)">
+            <summary>
+            添加缓存
+            </summary>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <param name="myRefreshAction">自定义刷新动作</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.GetCache(System.String)">
+            <summary>
+            获取缓存对象
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.RemoveCache(System.String)">
+            <summary>
+            移除缓存对象
+            </summary>
+            <param name="key">键</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.RemoveCacheForClassKey(System.String)">
+            <summary>
+            移除与classKey相关的所有缓存对象
+            </summary>
+            <param name="cacheKey">键</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.RemoveCacheForClassKeys(System.String[])">
+            <summary>
+            移除与cacheKeys数组相关的所有缓存对象
+            </summary>
+            <param name="cacheKeys">键数组</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Contains(System.String)">
+            <summary>
+             判断是否存在缓存对象
+            </summary>
+            <param name="key">键</param>
+            <returns></returns>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Count">
+            <summary>
+            获取总的缓存数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheHelper.Refresh">
+            <summary>
+            清空缓存对象
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.CacheObserver">
+            <summary>
+            缓存观察者
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheObserver.observerName">
+            <summary>
+            缓存名称
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheObserver.subject">
+            <summary>
+            缓存项实体
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheObserver.#ctor(System.String,Enterprise.Component.Cache.ICacheSubject)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="observerName">观察者名称</param>
+            <param name="subject">关联对象</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheObserver.Update">
+            <summary>
+            更新操作(目前用于清除缓存)
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.DependencyFacade">
+            <summary>
+            获取数据表的缓存依赖关系(外观模式)
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.ICacheDependency">
+            <summary>
+            这个接口是从属工厂（工厂模式）返回的
+            开发人员可以执行这个接口将不同类型的从属缓存添加到pet shop
+            
+            用于实现简单工厂模式中的抽象接口，开发者可以实现该接口成员，扩展缓存依赖功能应用。
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.ICacheDependency.GetDependency">
+             <summary>
+            此方法创建从属缓存适当的执行
+             
+            该方法用于获取创建聚合缓存依赖类AggregateCacheDependency的实例
+             </summary>
+             <returns>从属缓存集合里深入的从属缓存，聚合缓存依赖类AggregateCacheDependency</returns>
+        </member>
+        <member name="T:Enterprise.Component.Cache.ICacheSubject">
+            <summary>
+            缓存对象接口定义
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.ICacheSubject.Attach(Enterprise.Component.Cache.CacheObserver)">
+            <summary>
+            注册
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.ICacheSubject.Detach(Enterprise.Component.Cache.CacheObserver)">
+            <summary>
+            注销
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.ICacheSubject.Notify">
+            <summary>
+            通知
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.CacheItemRefreshAction">
+            <summary>
+            文件名:  CacheItemRefreshAction.cs
+            功能描述: 自定义缓存刷新操作
+            创建人：qw
+            创建日期: 2013.1.24
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheItemRefreshAction.attr_t">
+            <summary>
+            对象类型 
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.CacheItemRefreshAction.attr_isReload">
+            <summary>
+            自动加载标志
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheItemRefreshAction.#ctor(System.Type,System.Object[],System.String,System.Object[])">
+            <summary>
+            构造方法1
+            </summary>
+            <param name="attr_T">对象类型</param>
+            <param name="attr_ConstuctParms">构造参数</param>
+            <param name="attr_MethodName">方法名称</param>
+            <param name="attr_Parameters">方法参数</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheItemRefreshAction.#ctor(System.Type,System.Boolean)">
+            <summary>
+            构造方法2
+            </summary>
+            <param name="attr_T">对象类型</param>
+            <param name="attr_IsReload">自动加载标志</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheItemRefreshAction.ReloadData(System.String)">
+            <summary>
+            自动生成对象实例并执行方法
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.CacheItemRefreshAction.Refresh(System.String,System.Object,Microsoft.Practices.EnterpriseLibrary.Caching.CacheItemRemovedReason)">
+            <summary>
+            自定义刷新操作
+            </summary>
+            <param name="removedKey">移除的键</param>
+            <param name="expiredValue">过期的值</param>
+            <param name="removalReason">移除理由 Expired：过期被移除 Removed：被手动移除 Scavenged：因为缓存数量已满，则根据缓存等级移除较低级的缓存 Unknown：未知移除，不建议使用</param>
+        </member>
+        <member name="P:Enterprise.Component.Cache.CacheItemRefreshAction.ConstuctParms">
+            <summary>
+            构造方法参数集合
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.CacheItemRefreshAction.MethodName">
+            <summary>
+            执行的方法名称
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.CacheItemRefreshAction.Parameters">
+            <summary>
+            方法参数集合
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.TableCacheObserver">
+            <summary>
+            数据表缓存观察者
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheObserver.#ctor(System.String,Enterprise.Component.Cache.ICacheSubject)">
+            <summary>
+            数据表缓存观察者-构造方法
+            </summary>
+            <param name="observerName"></param>
+            <param name="subject"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheObserver.Update">
+            <summary>
+            更新操作(目前用于清除缓存)
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.TableCacheSubject">
+            <summary>
+            数据表缓存项实体
+            </summary>
+        </member>
+        <member name="F:Enterprise.Component.Cache.TableCacheSubject.observers">
+            <summary>
+            观察者集合
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheSubject.Attach(Enterprise.Component.Cache.CacheObserver)">
+            <summary>
+            注册
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheSubject.Detach(Enterprise.Component.Cache.CacheObserver)">
+            <summary>
+            注销
+            </summary>
+            <param name="observer"></param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheSubject.Notify">
+            <summary>
+            触发通知
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheSubject.#ctor(Enterprise.Component.Cache.TableChangeModel)">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableCacheSubject.CheckState(Enterprise.Component.Cache.TableChangeModel)">
+            <summary>
+            检测当前状态
+            </summary>
+            <param name="_Table"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Enterprise.Component.Cache.TableCacheSubject.Table">
+            <summary>
+            数据表
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.TableChangeModel">
+            <summary>
+            数据表更新记录表-实体类
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.TableChangeModel.USERNAME">
+            <summary>
+            所有者名称
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.TableChangeModel.TABLENAME">
+            <summary>
+            数据表名称
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.TableChangeModel.CHANGEID">
+            <summary>
+            变化ID
+            </summary>
+        </member>
+        <member name="P:Enterprise.Component.Cache.TableChangeModel.CHANGETIME">
+            <summary>
+            变化时间
+            </summary>
+        </member>
+        <member name="T:Enterprise.Component.Cache.TableDependency">
+            <summary>
+            该类是具体要求产品类 Category,Item,Product 的共同父类，其中实现了类构造函数和GetDependency方法
+            </summary>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableDependency.#ctor(System.String)">
+            <summary>
+            实现类构造函数，设置聚合缓存依赖对象
+            </summary>
+            <param name="configKey">配置信息</param>
+        </member>
+        <member name="M:Enterprise.Component.Cache.TableDependency.GetDependency">
+            <summary>
+            实现GetDependency方法，返回聚合缓存依赖对象Dependency 
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

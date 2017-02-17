@@ -1,0 +1,41 @@
+﻿body
+{
+margin:auto 0;
+    }
+.tools
+{
+    height: 30px;
+    background-color: #F3F3F3;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.linkbutton
+{
+    border-style: solid none solid none;
+    border-width: thin;
+    border-color: #C0C0C0;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 3px;
+    line-height: 21px;
+    background-color: #E1ECFD;
+}
+.linkbutton a
+{
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.tabletitle
+{
+    background-position: 10px;
+    line-height: 30px;
+    font-family: 宋体, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 30px;
+    background-color: #F2F2F2;
+    color: #000000;
+    background-image: url('../images/arrows.jpg');
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Project.master.cs" Inherits="Enterprise.UI.Web.Project" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <%--IE Mode -- %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%--icon--%>
+    <link rel="stylesheet" href="/Resources/OA/easyui1.32/themes/icon.css" />
+    <%--default--%>
+    <link rel="Stylesheet" href="/Resources/OA/easyui1.32/themes/default/easyui.css" title="default" />
+    <link rel="Stylesheet" href="/Resources/OA/site_skin/default/site.main.css" title="default" />
+    <link rel="Stylesheet" href="/Resources/Css/Site.css" type="text/css" />
+    <%--script--%>
+    <script type="text/javascript" src="/Resources/OA/jquery/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="/Resources/OA/easyui1.32/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/Resources/OA/easyui1.32/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="/Resources/OA/site_skin/scripts/Base.js"></script>
+    <script type="text/javascript" src="/Resources/OA/site_skin/scripts/Common.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 0; margin: 0 auto;">
+    <form id="form1" runat="server">
+        <div style="padding: 5px;">
+            <asp:ContentPlaceHolder ID="ProjectPH" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

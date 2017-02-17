@@ -1,0 +1,21 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhKindhbModel" table="PERFO_KH_KINDHB">
+
+      <id name="WJID" column="WJID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="LXID" column="LXID" type="string" />
+			<property name="WJMC" column="WJMC" type="string" />
+			<property name="ZXLL" column="ZXLL" type="string" />
+			<property name="WJFJ" column="WJFJ" type="string" />
+			<property name="WJZT" column="WJZT" type="string" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+
+      <many-to-one name="Kind" class="KhKindModel" lazy='false' insert="false" update="false">
+        <column name="LXID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

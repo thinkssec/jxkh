@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkWczshdfModel" table="PERFO_ZBK_WCZSHDF">
+        
+			<id name="OPERID" column="OPERID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="LHZBBM" column="LHZBBM" type="string" />
+			<property name="OPERATOR" column="OPERATOR" type="string" />
+			<property name="OPERTYPE" column="OPERTYPE" type="string" />
+			<property name="OPERQZ" column="OPERQZ" type="decimal" />
+
+    </class>
+</hibernate-mapping>

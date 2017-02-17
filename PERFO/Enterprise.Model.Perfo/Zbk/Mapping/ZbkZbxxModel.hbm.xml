@@ -1,0 +1,19 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkZbxxModel" table="PERFO_ZBK_ZBXX">
+        
+			<id name="ZBID" column="ZBID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="ZBLX" column="ZBLX" type="string" />
+			<property name="ZBMC" column="ZBMC" type="string" />
+			<property name="YJZBMC" column="YJZBMC" type="string" />
+			<property name="EJZBMC" column="EJZBMC" type="string" />
+			<property name="SJZBMC" column="SJZBMC" type="string" />
+			<property name="SXH" column="SXH" type="string" />
+			<property name="ZBZT" column="ZBZT" type="string" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhZbsxModel" table="PERFO_KH_ZBSX">
+        
+			<id name="SXID" column="SXID" type="string">			</id>
+			<property name="ZRSZBID" column="ZRSZBID" type="string" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="SXZBBM" column="SXZBBM" type="string" />
+			<property name="SXQZ" column="SXQZ" type="decimal" />
+			<property name="SXFZ" column="SXFZ" type="decimal" />
+			<property name="SXXH" column="SXXH" type="int" />
+			<property name="SXJGBM" column="SXJGBM" type="int" />
+      <property name="SXJZFZ" column="SXJZFZ" type="decimal" />
+
+      <many-to-one name="Kaohe" class="Enterprise.Model.Perfo.Kh.KhKhglModel" lazy='false' insert="false" update="false">
+        <column name="KHID" />
+      </many-to-one>
+
+      <many-to-one name="JxzrsZb" class="Enterprise.Model.Perfo.Kh.KhJxzrszbModel" lazy='false' insert="false" update="false">
+        <column name="ZRSZBID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,84 @@
+﻿/* CSS Document */
+
+.table-box {	
+WIDTH: 100%;
+BORDER-RIGHT: #387D39 1px solid;	
+PADDING-RIGHT: 1px;	
+BORDER-TOP: #387D39 1px solid;	
+PADDING-LEFT: 1px;	
+BACKGROUND: #cccccc;	
+MARGIN-BOTTOM: 10px;	
+BORDER-LEFT: #387D39 1px solid;	
+PADDING-TOP: 1px;	
+BORDER-BOTTOM: #387D39 1px solid;
+color:Black;
+}
+
+.table_title {
+FONT: bold 14px Verdana;	
+COLOR: #7D7D7D;	
+BACKGROUND-COLOR: #E9F2F7;
+HEIGHT: 30px;
+PADDING-LEFT: 2px;
+PADDING-RIGHT:2px;
+
+}
+
+/*add by qw 2011.5.31 start*/
+.table_body2 	
+{
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #CADEE8;
+height:28px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+font-family: "Verdana";
+}
+.table_none2 {	
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #E9F2F7;
+height:28px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+font-family: "Verdana"; 
+}
+/*end*/
+
+.table_body {	
+FONT-SIZE: 12px;
+BACKGROUND-COLOR: #CADEE8;
+height:28px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+width:25%;
+font-family: "Verdana"; 
+}
+.table_none {	
+FONT-SIZE: 12px;
+BACKGROUND-COLOR: #E9F2F7;
+height:28px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+width:75%;
+font-family: "Verdana"; 
+}
+
+.table_body_NoWidth{  width:20%;}
+.table_none_NoWidth{  width:30%;}
+
+.table_body_stateWidth{ width:0px; }
+.table_none_stateWidth{width:0px; }
+         
+.row 
+{
+    PADDING-LEFT: 5px;PADDING-RIGHT:5px; HEIGHT:28px; 
+    BACKGROUND-COLOR: #fff;
+    font-size:12px;
+}
+
+.row1
+{
+    PADDING-LEFT: 5px;PADDING-RIGHT:5px; HEIGHT:28px; 
+    BACKGROUND-COLOR:#E9F2F7;
+    font-size:12px;
+}

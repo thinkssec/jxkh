@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysCacheModel" table="PERFO_SYS_CACHE">
+        
+			<id name="CACHENAME" column="CACHENAME" type="string">			</id>
+			<property name="USERNAME" column="USERNAME" type="string" />
+			<property name="TABLENAME" column="TABLENAME" type="string" />
+      <property name="RELATIONCACHE" column="RELATIONCACHE" type="string" />      
+
+    </class>
+</hibernate-mapping>

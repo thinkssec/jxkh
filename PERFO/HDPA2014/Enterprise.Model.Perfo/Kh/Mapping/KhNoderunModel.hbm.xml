@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhNoderunModel" table="PERFO_KH_NODERUN">
+        
+			<id name="YXID" column="YXID" type="string">			</id>
+			<property name="KHID" column="KHID" type="int" />
+			<property name="JDID" column="JDID" type="int" />
+			<property name="YXZT" column="YXZT" type="string" />
+			<property name="YXKSSJ" column="YXKSSJ" type="DateTime" />
+			<property name="YXWCSJ" column="YXWCSJ" type="DateTime" />
+			<property name="YXJDZ" column="YXJDZ" type="int" />
+
+      <many-to-one name="JdNode" class="Enterprise.Model.Perfo.Kh.KhNodesModel" lazy='false' insert="false" update="false">
+        <column name="JDID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkLhzbModel" table="PERFO_ZBK_LHZB">
+        
+			<id name="LHZBBM" column="LHZBBM" type="string">			</id>
+			<property name="GZID" column="GZID" type="string" />
+			<property name="ZBID" column="ZBID" type="int" />
+			<property name="BBMC" column="BBMC" type="string" />
+			<property name="JSDW" column="JSDW" type="string" />
+			<property name="BJQZ" column="BJQZ" type="decimal" />
+			<property name="ZBSM" column="ZBSM" type="string" />
+			<property name="PFBZ" column="PFBZ" type="string" />
+			<property name="SFJY" column="SFJY" type="string" />
+			<property name="PARENTZBBM" column="PARENTZBBM" type="string" />
+			<property name="FZZB" column="FZZB" type="string" />
+			<property name="JSBDS" column="JSBDS" type="string" />
+			<property name="JSMS" column="JSMS" type="string" />
+			<property name="JZFS" column="JZFS" type="decimal" />
+			<property name="ZBDH" column="ZBDH" type="string" />
+      <property name="ISMBZ" column="ISMBZ" type="string" />
+      <property name="ZBXH" column="ZBXH" type="string" />
+      
+      <many-to-one name="Zbxx" class="ZbkZbxxModel" lazy='false' insert="false" update="false">
+        <column name="ZBID" />
+      </many-to-one>
+
+      <many-to-one name="Jsgz" class="ZbkJsgzModel" lazy='false' insert="false" update="false">
+        <column name="GZID" />
+      </many-to-one>
+
+      <bag name="MbztbLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="LHZBBM" />
+        </key>
+        <one-to-many class="ZbkMbztbModel" not-found="ignore"/>
+      </bag>
+
+      <bag name="MbzshLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="LHZBBM" />
+        </key>
+        <one-to-many class="ZbkMbzshModel" not-found="ignore"/>
+      </bag>
+
+      <bag name="WcztbLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="LHZBBM" />
+        </key>
+        <one-to-many class="ZbkWcztbModel" not-found="ignore"/>
+      </bag>
+
+      <bag name="WczshdfLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="LHZBBM" />
+        </key>
+        <one-to-many class="ZbkWczshdfModel" not-found="ignore"/>
+      </bag>
+
+    </class>
+</hibernate-mapping>

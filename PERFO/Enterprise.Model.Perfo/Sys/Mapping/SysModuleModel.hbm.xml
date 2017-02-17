@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysModuleModel" table="PERFO_SYS_MODULE">
+        
+			<id name="MID" column="MID" type="string">			</id>
+			<property name="MNAME" column="MNAME" type="string" />
+			<property name="MURL" column="MURL" type="string" />
+			<property name="DISABLE" column="DISABLE" type="string" />
+			<property name="MPARENTID" column="MPARENTID" type="string" />
+			<property name="XSXH" column="XSXH" type="string" />
+			<property name="BZ" column="BZ" type="string" />
+			<property name="WEBURL" column="WEBURL" type="string" />
+
+    </class>
+</hibernate-mapping>

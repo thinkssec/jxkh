@@ -1,0 +1,9 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkBanbenModel" table="PERFO_ZBK_BANBEN">
+        
+			<id name="BBMC" column="BBMC" type="string">			</id>
+			<property name="QYSJ" column="QYSJ" type="DateTime" />
+
+    </class>
+</hibernate-mapping>

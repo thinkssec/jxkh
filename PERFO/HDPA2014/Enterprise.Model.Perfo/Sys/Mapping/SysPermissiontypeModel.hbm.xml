@@ -1,0 +1,10 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysPermissiontypeModel" table="PERFO_SYS_PERMISSIONTYPE">
+        
+			<id name="ACTIONKEY" column="ACTIONKEY" type="int">			</id>
+			<property name="ACTIONABBR" column="ACTIONABBR" type="string" />
+			<property name="ACTIONNAME" column="ACTIONNAME" type="string" />
+
+    </class>
+</hibernate-mapping>

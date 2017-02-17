@@ -1,0 +1,169 @@
+﻿body
+{
+	padding: 0px;
+	margin: 10px;
+	font-size: 12px;
+}
+#roletable
+{
+	border-collapse: collapse;
+	border-style: dotted;
+    border-color: #808080;
+    font-size: 12px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+#roletable td
+{
+    border-width: 1px;
+	border-color: #808080;
+	border-style: dotted;
+	font-size: 12px;
+	border-collapse: collapse;
+	padding:3px;
+}
+#tool a
+{
+	line-height:20px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #728AA1;
+	font-weight: bolder;
+}
+.active
+{
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #728AA1;
+	background-image: url('../Images/toolbarbg.gif');
+	font-size: 12px;
+	cursor: default;
+	text-decoration: none;
+}
+.activehover
+{
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #728AA1;
+	background-image: url('../Images/toolbarbghover.gif');
+	font-size: 12px;
+	cursor:pointer;
+	text-decoration: none;
+}
+.popwin
+{
+	margin-top: 0px;
+	margin-left: 0px;
+	background-image: url('../Images/popwin.gif');
+	vertical-align: middle;
+	position: absolute;
+	background-repeat: no-repeat;
+	z-index: 1000;
+}
+#wintitle
+{
+	color: #336699;
+	font-weight: bold;
+	font-size: 12px;
+	padding-top: 12px;
+	padding-left: 48px;
+	letter-spacing: 5px;
+}
+.winform
+{
+	padding: 10px;
+	margin: 20px 10px 10px 10px;
+	border: 1px solid #cccccc;
+	font-family: 宋体, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	width: 370px;
+}
+.winform div
+{
+	padding: 1px 1px 1px 1px;
+}
+.rolerowselected
+{
+	padding: 0px;
+	margin: 0px;
+	background-color: #E8E8E8;
+}
+#userimage
+{
+	float: right;
+	clear:both;
+	margin-left:230px;
+	margin-top:-100px;	
+}
+.usertd
+{
+	padding: 8px;
+	margin:8px;
+	height: 104px;
+	width: 150px;
+}
+.usertdselect
+{
+	border: 1px dotted #C0C0C0;
+	height: 104px;
+	width: 150px;
+	background-image: url('../Images/userselectbg.gif');
+}
+.userrolepic
+{
+	float:left;
+}
+.rolename
+{
+	margin-left: 20;
+	margin-top: 70px;
+	position: absolute;
+	text-align: center;
+	font-family: 'Arial Unicode MS';
+	font-size: 12px;
+	color: #000000;
+}
+.userdisable
+{
+	float: right;
+	margin-left: 20;
+	margin-top: 20px;
+	position: absolute;
+}
+.userloginid
+{
+	font-size: 16px;
+	font-family: 'Arial Unicode MS';
+	text-decoration: underline;
+	color: #003399;
+}
+.username
+{
+	font-size: 12px;
+	margin-top: 5px;
+}
+.roottd
+{
+	border: 1px solid #808080;
+	padding: 10px;
+	font-weight:bold;
+	background-image: url('../Images/roottd.gif');
+	height: 20px;
+}
+.childtd
+{
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+	border: 1px solid #808080;
+	padding: 10px;
+	background-image: url('../Images/chilidtd.gif');
+}
+.select
+{
+	border: 1px solid #808080;
+	padding: 4px;
+	background-image: url('../Images/gridheader.gif');
+	margin-left: 2px;
+}

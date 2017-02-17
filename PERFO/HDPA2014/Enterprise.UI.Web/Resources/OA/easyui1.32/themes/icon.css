@@ -1,0 +1,179 @@
+.icon-note{
+	background:url('icons/notekey.png') no-repeat center center;
+}
+.icon-ejdw{
+	background:url('icons/house.png') no-repeat center center;
+}
+.icon-jgbm{
+	background:url('icons/zxry.png') no-repeat center center;
+}
+.icon-zbk{
+	background:url('icons/zhibk.png') no-repeat center center;
+}
+.icon-system{
+	background:url('icons/ip.png') no-repeat center center;
+}
+.icon-blank{
+	background:url('icons/blank.gif') no-repeat center center;
+}
+.icon-sjgl{
+	background:url('icons/sjgl.png') no-repeat center center;
+}
+.icon-calendar {
+    background:url('icons/calendar.png') no-repeat center center;
+}
+.icon-info {
+    background:url('icons/information.png') no-repeat center center;
+}
+.icon-application{
+	background:url('icons/application_double.png') no-repeat center center;
+}
+.icon-add{
+	background:url('icons/edit_add.png') no-repeat center center;
+}
+.icon-edit{
+	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-remove{
+	background:url('icons/edit_remove.png') no-repeat center center;
+}
+.icon-save{
+	background:url('icons/filesave.png') no-repeat center center;
+}
+.icon-cut{
+	background:url('icons/cut.png') no-repeat center center;
+}
+.icon-ok{
+	background:url('icons/ok.png') no-repeat center center;
+}
+.icon-no{
+	background:url('icons/no.png') no-repeat center center;
+}
+.icon-cancel{
+	background:url('icons/cancel.png') no-repeat center center;
+}
+.icon-reload{
+	background:url('icons/reload.png') no-repeat center center;
+}
+.icon-search{
+	background:url('icons/search.png') no-repeat center center;
+}
+.icon-print{
+	background:url('icons/print.png') no-repeat center center;
+}
+.icon-help{
+	background:url('icons/help.png') no-repeat center center;
+}
+.icon-undo{
+	background:url('icons/undo.png') no-repeat center center;
+}
+.icon-redo{
+	background:url('icons/redo.png') no-repeat center center;
+}
+.icon-back{
+	background:url('icons/back.png') no-repeat center center;
+}
+.icon-sum{
+	background:url('icons/sum.png') no-repeat center center;
+}
+.icon-tip{
+	background:url('icons/tip.png') no-repeat center center;
+}
+.icon-lock{
+	background:url('icons/lock.png') no-repeat center center;
+}
+.icon-unlock{
+	background:url('icons/lock_unlock.png') no-repeat center center;
+}
+
+.icon-mini-add{
+	background:url('icons/mini_add.png') no-repeat center center;
+}
+.icon-mini-edit{
+	background:url('icons/mini_edit.png') no-repeat center center;
+}
+.icon-mini-refresh{
+	background:url('icons/mini_refresh.png') no-repeat center center;
+}
+
+.icon-yunxing
+{
+    background:url('icons/yunxing.png') no-repeat center center;
+}
+.icon-jiaofu
+{
+    background:url('icons/jiaofu.png') no-repeat center center;
+}
+.icon-shenhe
+{
+    background:url('icons/shenhe.png') no-repeat center center;
+}
+.icon-cog
+{
+    background:url('icons/cog.png') no-repeat center center;
+}
+.icon-wode
+{
+    background:url('icons/wode.png') no-repeat center center;
+}
+.icon-zanting
+{
+    background:url('icons/zanting.png') no-repeat center center;
+}
+.icon-zhongzhi
+{
+    background:url('icons/zhongzhi.png') no-repeat center center;
+}
+/*文件扩展名图标*/
+.icon-xls {
+     background:url('icons/page_excel.png') no-repeat center center;
+}
+.icon-xlsx {
+     background:url('icons/page_excel.png') no-repeat center center;
+}
+.icon-pdf {
+     background:url('icons/page_white_acrobat.png') no-repeat center center;
+}
+.icon-zip {
+     background:url('icons/page_white_compressed.png') no-repeat center center;
+}
+.icon-rar {
+     background:url('icons/page_white_compressed.png') no-repeat center center;
+}
+.icon-swf {
+     background:url('icons/page_white_flash.png') no-repeat center center;
+}
+.icon-doc {
+     background:url('icons/page_white_word.png') no-repeat center center;
+}
+.icon-comments
+{
+    background:url('icons/sound.png') no-repeat 0px 0px;
+}
+.icon-docx {
+     background:url('icons/page_white_word.png') no-repeat center center;
+}
+.icon-png {
+     background:url('icons/picture.png') no-repeat center center;
+}
+.icon-jpg {
+     background:url('icons/picture.png') no-repeat center center;
+}
+.icon-gif {
+     background:url('icons/picture.png') no-repeat center center;
+}
+.icon-ppt {
+     background:url('icons/page_white_powerpoint.png') no-repeat center center;
+}
+.icon-pptx {
+     background:url('icons/page_white_powerpoint.png') no-repeat center center;
+}
+.icon-no {
+     background:url('icons/page_link.png') no-repeat center center;
+}
+.icon-up{
+	background:url('icons/up.gif') no-repeat center center;
+}
+.icon-down{
+	background:url('icons/down.gif') no-repeat center center;
+}

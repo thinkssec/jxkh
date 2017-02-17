@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.ORM", "Enterprise.Component.ORM\Enterprise.Component.ORM.csproj", "{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.Infrastructure", "Enterprise.Component.Infrastructure\Enterprise.Component.Infrastructure.csproj", "{A439B7BB-89F3-4BD1-87B8-259300139AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.Cache", "Enterprise.Component.Cache\Enterprise.Component.Cache.csproj", "{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Model.Perfo", "Enterprise.Model.Perfo\Enterprise.Model.Perfo.csproj", "{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Data.Perfo", "Enterprise.Data.Perfo\Enterprise.Data.Perfo.csproj", "{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Service.Perfo", "Enterprise.Service.Perfo\Enterprise.Service.Perfo.csproj", "{A73EFB83-1370-4480-8CB7-A01004A76BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.UI.Web", "Enterprise.UI.Web\Enterprise.UI.Web.csproj", "{68A68314-6309-49CB-8AFF-33198A97F5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.MVC", "Enterprise.Component.MVC\Enterprise.Component.MVC.csproj", "{89D12F43-DF2A-45CE-8013-1376A51F3149}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://10.66.232.2:8080/tfs/sseccodelib2014
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Enterprise.Component.Cache\\Enterprise.Component.Cache.csproj
+		SccProjectName1 = Enterprise.Component.Cache
+		SccLocalPath1 = Enterprise.Component.Cache
+		SccProjectUniqueName2 = Enterprise.Component.Infrastructure\\Enterprise.Component.Infrastructure.csproj
+		SccProjectName2 = Enterprise.Component.Infrastructure
+		SccLocalPath2 = Enterprise.Component.Infrastructure
+		SccProjectUniqueName3 = Enterprise.Component.MVC\\Enterprise.Component.MVC.csproj
+		SccProjectName3 = Enterprise.Component.MVC
+		SccLocalPath3 = Enterprise.Component.MVC
+		SccProjectUniqueName4 = Enterprise.Component.ORM\\Enterprise.Component.ORM.csproj
+		SccProjectName4 = Enterprise.Component.ORM
+		SccLocalPath4 = Enterprise.Component.ORM
+		SccProjectUniqueName5 = Enterprise.Data.Perfo\\Enterprise.Data.Perfo.csproj
+		SccProjectName5 = Enterprise.Data.Perfo
+		SccLocalPath5 = Enterprise.Data.Perfo
+		SccProjectUniqueName6 = Enterprise.Model.Perfo\\Enterprise.Model.Perfo.csproj
+		SccProjectName6 = Enterprise.Model.Perfo
+		SccLocalPath6 = Enterprise.Model.Perfo
+		SccProjectUniqueName7 = Enterprise.Service.Perfo\\Enterprise.Service.Perfo.csproj
+		SccProjectName7 = Enterprise.Service.Perfo
+		SccLocalPath7 = Enterprise.Service.Perfo
+		SccProjectUniqueName8 = Enterprise.UI.Web\\Enterprise.UI.Web.csproj
+		SccProjectName8 = Enterprise.UI.Web
+		SccLocalPath8 = Enterprise.UI.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

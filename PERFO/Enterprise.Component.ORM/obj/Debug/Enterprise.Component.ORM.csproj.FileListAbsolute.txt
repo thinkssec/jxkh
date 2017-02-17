@@ -1,0 +1,12 @@
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Enterprise.Component.ORM.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Enterprise.Component.ORM.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Enterprise.Component.Infrastructure.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Iesi.Collections.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\NHibernate.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\log4net.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\FredCK.FCKeditorV2.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Enterprise.Component.Infrastructure.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\bin\Debug\Enterprise.Component.Infrastructure.xml
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\obj\Debug\Enterprise.Component.ORM.csprojResolveAssemblyReference.cache
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\obj\Debug\Enterprise.Component.ORM.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\obj\Debug\Enterprise.Component.ORM.pdb

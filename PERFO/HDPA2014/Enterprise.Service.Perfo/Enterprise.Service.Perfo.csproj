@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A73EFB83-1370-4480-8CB7-A01004A76BB8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterprise.Service.Perfo</RootNamespace>
+    <AssemblyName>Enterprise.Service.Perfo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\PipePatrol\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kh\KhArticlesService.cs" />
+    <Compile Include="Kh\KhCjqjService.cs" />
+    <Compile Include="Kh\KhCwjcsjService.cs" />
+    <Compile Include="Kh\KhDfzbmxService.cs" />
+    <Compile Include="Kh\KhDlzbmxService.cs" />
+    <Compile Include="Kh\KhEjdwkhdfService.cs" />
+    <Compile Include="Kh\KhHbjfgzService.cs" />
+    <Compile Include="Kh\KhJgbmdfbService.cs" />
+    <Compile Include="Kh\KhJgbmkhdfService.cs" />
+    <Compile Include="Kh\KhJgzfbService.cs" />
+    <Compile Include="Kh\KhJxzrsService.cs" />
+    <Compile Include="Kh\KhJxzrszbService.cs" />
+    <Compile Include="Kh\KhKhdfpxfwService.cs" />
+    <Compile Include="Kh\KhKhglService.cs" />
+    <Compile Include="Kh\KhKindhbService.cs" />
+    <Compile Include="Kh\KhKindService.cs" />
+    <Compile Include="Kh\KhLhzbjcsjService.cs" />
+    <Compile Include="Kh\KhMessageService.cs" />
+    <Compile Include="Kh\KhNdxsService.cs" />
+    <Compile Include="Kh\KhNoderunService.cs" />
+    <Compile Include="Kh\KhNodesService.cs" />
+    <Compile Include="Kh\KhSigninService.cs" />
+    <Compile Include="Kh\KhSjsbService.cs" />
+    <Compile Include="Kh\KhTjbService.cs" />
+    <Compile Include="Kh\KhUnlockService.cs" />
+    <Compile Include="Kh\KhZbsxService.cs" />
+    <Compile Include="Kh\KhZzjgfileService.cs" />
+    <Compile Include="Kh\KhZzjgService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\MyCacheManager.cs" />
+    <Compile Include="Sys\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\SysBmjgService.cs" />
+    <Compile Include="Sys\SysCacheService.cs" />
+    <Compile Include="Sys\SysFgbmjgService.cs" />
+    <Compile Include="Sys\SysModuleService.cs" />
+    <Compile Include="Sys\SysPermissiontypeService.cs" />
+    <Compile Include="Sys\SysRolepermissionService.cs" />
+    <Compile Include="Sys\SysRoleService.cs" />
+    <Compile Include="Sys\SysTablechangeService.cs" />
+    <Compile Include="Sys\SysUserpermissionService.cs" />
+    <Compile Include="Sys\SysUserService.cs" />
+    <Compile Include="Sys\SysVisitlogService.cs" />
+    <Compile Include="Zbk\ZbkBanbenService.cs" />
+    <Compile Include="Zbk\ZbkBdfjgService.cs" />
+    <Compile Include="Zbk\ZbkCwjcsjglzbService.cs" />
+    <Compile Include="Zbk\ZbkDfzbService.cs" />
+    <Compile Include="Zbk\ZbkDfzService.cs" />
+    <Compile Include="Zbk\ZbkJsgzHandler.cs" />
+    <Compile Include="Zbk\ZbkJsgzLogic.cs" />
+    <Compile Include="Zbk\ZbkJsgzService.cs" />
+    <Compile Include="Zbk\ZbkLhzbService.cs" />
+    <Compile Include="Zbk\ZbkMbzshService.cs" />
+    <Compile Include="Zbk\ZbkMbztbService.cs" />
+    <Compile Include="Zbk\ZbkWczshdfService.cs" />
+    <Compile Include="Zbk\ZbkWcztbService.cs" />
+    <Compile Include="Zbk\ZbkZbxxService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.Component.Cache\Enterprise.Component.Cache.csproj">
+      <Project>{e38ddbf0-a978-4e6e-bfab-15a25b08de1c}</Project>
+      <Name>Enterprise.Component.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Component.Infrastructure\Enterprise.Component.Infrastructure.csproj">
+      <Project>{a439b7bb-89f3-4bd1-87b8-259300139afa}</Project>
+      <Name>Enterprise.Component.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Component.MVC\Enterprise.Component.MVC.csproj">
+      <Project>{89d12f43-df2a-45ce-8013-1376a51f3149}</Project>
+      <Name>Enterprise.Component.MVC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Data.Perfo\Enterprise.Data.Perfo.csproj">
+      <Project>{e8d1afb1-79d6-4e32-a3c2-4fadd9da40a5}</Project>
+      <Name>Enterprise.Data.Perfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Model.Perfo\Enterprise.Model.Perfo.csproj">
+      <Project>{281c1366-4a0c-44a9-b3e1-f4f19d218bfc}</Project>
+      <Name>Enterprise.Model.Perfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

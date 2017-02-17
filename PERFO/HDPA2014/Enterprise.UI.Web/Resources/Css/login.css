@@ -1,0 +1,41 @@
+﻿body
+{
+	margin: 0px;
+	background-image: url('../images/loginbg.jpg');
+	font-weight: bold;
+    font-size: 11px;
+}
+.xlogin
+{
+    
+    width: 600px;
+    height: 350px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #333333;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -255px;
+    margin-left: -300px;
+    background-image: url('../images/loginbg.png');
+}
+.loginp
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:15px;
+	margin-left:-80px;	
+	}
+	.loginp tr
+{
+	height: 32px;
+}
+input
+{
+	border: 1px solid #999999;
+	background-color: #E3E3E3;
+	font-family: 微软雅黑;
+}

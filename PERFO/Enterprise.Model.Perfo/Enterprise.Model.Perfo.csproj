@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterprise.Model.Perfo</RootNamespace>
+    <AssemblyName>Enterprise.Model.Perfo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/jxkh/PERFO/Enterprise.Model.Perfo</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://thinksky.visualstudio.com/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Khs\KhsDzbModel.cs" />
+    <Compile Include="Khs\KhsGzydModel.cs" />
+    <Compile Include="Khs\KhsJgmydModel.cs" />
+    <Compile Include="Khs\KhsKhbzModel.cs" />
+    <Compile Include="Khs\KhsKhdzbModel.cs" />
+    <Compile Include="Khs\KhsMbjgModel.cs" />
+    <Compile Include="Khs\KhsQzModel.cs" />
+    <Compile Include="Khs\KhsSjkhModel.cs" />
+    <Compile Include="Khx\KhxMbModel.cs" />
+    <Compile Include="Khx\KhxResultModel.cs" />
+    <Compile Include="Kh\KhArticlesModel.cs" />
+    <Compile Include="Kh\KhCjqjModel.cs" />
+    <Compile Include="Kh\KhCwjcsjModel.cs" />
+    <Compile Include="Kh\KhDfzbmxModel.cs" />
+    <Compile Include="Kh\KhDlzbmxModel.cs" />
+    <Compile Include="Kh\KhEjdwkhdfModel.cs" />
+    <Compile Include="Kh\KhHbjfgzModel.cs" />
+    <Compile Include="Kh\KhJgbmdfbModel.cs" />
+    <Compile Include="Kh\KhJgbmkhdfModel.cs" />
+    <Compile Include="Kh\KhJgzfbModel.cs" />
+    <Compile Include="Kh\KhJxzrsModel.cs" />
+    <Compile Include="Kh\KhJxzrszbModel.cs" />
+    <Compile Include="Kh\KhKhdfpxfwModel.cs" />
+    <Compile Include="Kh\KhKhglModel.cs" />
+    <Compile Include="Kh\KhKindhbModel.cs" />
+    <Compile Include="Kh\KhKindModel.cs" />
+    <Compile Include="Kh\KhLhzbjcsjModel.cs" />
+    <Compile Include="Kh\KhMessageModel.cs" />
+    <Compile Include="Kh\KhNdxsModel.cs" />
+    <Compile Include="Kh\KhNoderunModel.cs" />
+    <Compile Include="Kh\KhNodesModel.cs" />
+    <Compile Include="Kh\KhSigninModel.cs" />
+    <Compile Include="Kh\KhSjsbModel.cs" />
+    <Compile Include="Kh\KhTjbModel.cs" />
+    <Compile Include="Kh\KhUnlockModel.cs" />
+    <Compile Include="Kh\KhXsModel.cs" />
+    <Compile Include="Kh\KhZbsxModel.cs" />
+    <Compile Include="Kh\KhZzjgfileModel.cs" />
+    <Compile Include="Kh\KhZzjgModel.cs" />
+    <Compile Include="PerfoSuperModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\SysBmjgModel.cs" />
+    <Compile Include="Sys\SysCacheModel.cs" />
+    <Compile Include="Sys\SysFgbmjgModel.cs" />
+    <Compile Include="Sys\SysModuleModel.cs" />
+    <Compile Include="Sys\SysPermissiontypeModel.cs" />
+    <Compile Include="Sys\SysRoleModel.cs" />
+    <Compile Include="Sys\SysRolepermissionModel.cs" />
+    <Compile Include="Sys\SysTablechangeModel.cs" />
+    <Compile Include="Sys\SysUserModel.cs" />
+    <Compile Include="Sys\SysUserpermissionModel.cs" />
+    <Compile Include="Sys\SysVisitlogModel.cs" />
+    <Compile Include="Zbk\ZbkBanbenModel.cs" />
+    <Compile Include="Zbk\ZbkBdfjgModel.cs" />
+    <Compile Include="Zbk\ZbkCwjcsjglzbModel.cs" />
+    <Compile Include="Zbk\ZbkDfzbModel.cs" />
+    <Compile Include="Zbk\ZbkDfzModel.cs" />
+    <Compile Include="Zbk\ZbkJsgzModel.cs" />
+    <Compile Include="Zbk\ZbkLhzbModel.cs" />
+    <Compile Include="Zbk\ZbkMbzshModel.cs" />
+    <Compile Include="Zbk\ZbkMbztbModel.cs" />
+    <Compile Include="Zbk\ZbkWczshdfModel.cs" />
+    <Compile Include="Zbk\ZbkWcztbModel.cs" />
+    <Compile Include="Zbk\ZbkZbxxModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys\Mapping\SysCacheModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kh\Mapping\KhArticlesModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhCjqjModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhDfzbmxModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhDlzbmxModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhJgbmdfbModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhJxzrsModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhJxzrszbModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhKhglModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhKindhbModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhKindModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhLhzbjcsjModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhMessageModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhNdxsModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhNoderunModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhNodesModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhSigninModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhSjsbModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhTjbModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhUnlockModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhZbsxModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhZzjgfileModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhZzjgModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysBmjgModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysFgbmjgModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysModuleModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysPermissiontypeModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysRoleModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysRolepermissionModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysTablechangeModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysUserModel.hbm.xml" />
+    <EmbeddedResource Include="Sys\Mapping\SysVisitlogModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkBanbenModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkBdfjgModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkDfzbModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkDfzModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkJsgzModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkLhzbModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkMbzshModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkMbztbModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkWczshdfModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkWcztbModel.hbm.xml" />
+    <EmbeddedResource Include="Zbk\Mapping\ZbkZbxxModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.Component.Cache\Enterprise.Component.Cache.csproj">
+      <Project>{e38ddbf0-a978-4e6e-bfab-15a25b08de1c}</Project>
+      <Name>Enterprise.Component.Cache</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kh\Mapping\KhJgbmkhdfModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhJgzfbModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sys\Mapping\SysUserpermissionModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kh\Mapping\KhEjdwkhdfModel.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kh\Mapping\KhHbjfgzModel.hbm.xml" />
+    <EmbeddedResource Include="Kh\Mapping\KhKhdfpxfwModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kh\Mapping\KhCwjcsjModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Zbk\Mapping\ZbkCwjcsjglzbModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Kh\Mapping\KhXsModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsDzbModel.hbm.xml" />
+    <EmbeddedResource Include="Khs\Mapping\KhsKhdzbModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsKhbzModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khx\Mapping\KhxMbModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsMbjgModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsQzModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsJgmydModel.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Khs\Mapping\KhsGzydModel.hbm.xml" />
+    <EmbeddedResource Include="Khs\Mapping\KhsSjkhModel.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

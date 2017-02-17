@@ -1,0 +1,38 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhDfzbmxModel" table="PERFO_KH_DFZBMX">
+        
+			<id name="DFZBID" column="DFZBID" type="string">			</id>
+			<property name="SXID" column="SXID" type="string" />
+			<property name="ZBBM" column="ZBBM" type="string" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="DFSZ" column="DFSZ" type="decimal" />
+			<property name="DFBZ" column="DFBZ" type="string" />
+			<property name="DFRQ" column="DFRQ" type="DateTime" />
+			<property name="DFZ" column="DFZ" type="string" />
+			<property name="SJDF" column="SJDF" type="decimal" />
+			<property name="YSSM" column="YSSM" type="string" />
+			<property name="KHDX" column="KHDX" type="string" />
+
+      <many-to-one name="ZbsxModel" class="Enterprise.Model.Perfo.Kh.KhZbsxModel" lazy='false' insert="false" update="false">
+        <column name="SXID" />
+      </many-to-one>
+
+      <many-to-one name="DfzbModel" class="Enterprise.Model.Perfo.Zbk.ZbkDfzbModel" lazy='false' insert="false" update="false">
+        <column name="ZBBM" />
+      </many-to-one>
+
+      <many-to-one name="Danwei" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+      <bag name="KhJgbmdfbLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="DFZBID" />
+        </key>
+        <one-to-many class="Enterprise.Model.Perfo.Kh.KhJgbmdfbModel" not-found="ignore"/>
+      </bag>
+
+    </class>
+</hibernate-mapping>

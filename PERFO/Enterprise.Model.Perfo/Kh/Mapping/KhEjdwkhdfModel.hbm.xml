@@ -1,0 +1,42 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhEjdwkhdfModel" table="PERFO_KH_EJDWKHDF">
+        
+			<id name="DFID" column="DFID" type="string">			</id>
+			<property name="JGBM" column="JGBM" type="int" />
+      <property name="JGMC" column="JGMC" type="string" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="KHXMC" column="KHXMC" type="string" />
+			<property name="KHBZF" column="KHBZF" type="decimal" />
+			<property name="KHDF" column="KHDF" type="decimal" />
+			<property name="KHLX" column="KHLX" type="string" />
+			<property name="TJSJ" column="TJSJ" type="DateTime" />
+			<property name="CZR" column="CZR" type="string" />
+			<property name="XMXH" column="XMXH" type="string" />
+			<property name="KHDWSL" column="KHDWSL" type="int" />
+			<property name="DWZDF" column="DWZDF" type="decimal" />
+			<property name="DWPJF" column="DWPJF" type="decimal" />
+			<property name="DWPM" column="DWPM" type="int" />
+			<property name="DWDXBS" column="DWDXBS" type="decimal" />
+			<property name="BZSM" column="BZSM" type="string" />
+			<property name="FZRZDF" column="FZRZDF" type="decimal" />
+			<property name="FZRPJF" column="FZRPJF" type="decimal" />
+			<property name="FZRPM" column="FZRPM" type="int" />
+			<property name="FZRDFLB" column="FZRDFLB" type="string" />
+			<property name="FZRDXBS" column="FZRDXBS" type="decimal" />
+			<property name="NDXS" column="NDXS" type="decimal" />
+			<property name="HZBZ" column="HZBZ" type="string" />
+			<property name="HBJFID" column="HBJFID" type="string" />
+			<property name="ISHBJF" column="ISHBJF" type="string" />
+      <property name="GSDWMC" column="GSDWMC" type="string" />      
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+      <many-to-one name="Hbjf" class="Enterprise.Model.Perfo.Kh.KhHbjfgzModel" lazy='false' insert="false" update="false">
+        <column name="HBJFID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

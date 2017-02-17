@@ -1,0 +1,27 @@
+﻿.calendar
+{
+    color: #888888;
+    font-family: georgia;
+    border:0px;    
+    text-align:center;
+    font-size:13px;
+}
+.calendar th
+{
+    border-right: 1px solid #666666; 
+    border-bottom: 1px solid #666666; 
+    border-top: 1px solid #666666; 
+    font-size:14px;
+    font-weight:bold;
+}
+
+.calendar td
+{
+    border-right: 1px solid #666666; 
+    border-bottom: 1px solid #666666; 
+    text-align:center;
+}
+.calendar .first
+{
+    border-left:1px solid #666666;
+}

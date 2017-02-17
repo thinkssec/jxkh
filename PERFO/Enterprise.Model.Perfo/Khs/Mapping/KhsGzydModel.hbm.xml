@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Khs">
+    <class name="KhsGzydModel" table="PERFO_KHS_GZYD">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="KHID" column="KHID" type="int" />
+			<property name="LOGINID" column="LOGINID" type="string" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="PF" column="PF" type="decimal" />
+			<property name="BZ" column="BZ" type="string" />
+			<property name="LRSJ" column="LRSJ" type="DateTime" />
+			<property name="KHDZBID" column="KHDZBID" type="string" />
+
+    </class>
+</hibernate-mapping>

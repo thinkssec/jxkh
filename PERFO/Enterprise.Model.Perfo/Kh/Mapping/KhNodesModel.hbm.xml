@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhNodesModel" table="PERFO_KH_NODES">
+
+      <id name="JDID" column="JDID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="LXID" column="LXID" type="string" />
+			<property name="JDMC" column="JDMC" type="string" />
+			<property name="JDGLB" column="JDGLB" type="string" />
+			<property name="JDXH" column="JDXH" type="string" />
+			<property name="JDZ" column="JDZ" type="int" />
+			<property name="YXBZ" column="YXBZ" type="string" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+
+    </class>
+</hibernate-mapping>

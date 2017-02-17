@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysVisitlogModel" table="PERFO_SYS_VISITLOG">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="USERNAME" column="USERNAME" type="string" />
+			<property name="VISITURL" column="VISITURL" type="string" />
+			<property name="OPERATIONTYPE" column="OPERATIONTYPE" type="string" />
+			<property name="OPERATIONDATE" column="OPERATIONDATE" type="DateTime" />
+			<property name="VISITIPADDR" column="VISITIPADDR" type="string" />
+			<property name="BROWSERTYPE" column="BROWSERTYPE" type="string" />
+
+    </class>
+</hibernate-mapping>

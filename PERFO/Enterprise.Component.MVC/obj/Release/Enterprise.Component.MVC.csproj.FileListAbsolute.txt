@@ -1,0 +1,5 @@
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\bin\Release\Enterprise.Component.MVC.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\bin\Release\Enterprise.Component.MVC.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\obj\Release\Enterprise.Component.MVC.csprojResolveAssemblyReference.cache
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\obj\Release\Enterprise.Component.MVC.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\obj\Release\Enterprise.Component.MVC.pdb

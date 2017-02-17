@@ -1,0 +1,15 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhSigninModel" table="PERFO_KH_SIGNIN">
+        
+			<id name="QSID" column="QSID" type="int">			
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="TZID" column="TZID" type="string" />
+			<property name="QSDW" column="QSDW" type="string" />
+			<property name="QSR" column="QSR" type="string" />
+			<property name="QSRQ" column="QSRQ" type="DateTime" />
+
+    </class>
+</hibernate-mapping>

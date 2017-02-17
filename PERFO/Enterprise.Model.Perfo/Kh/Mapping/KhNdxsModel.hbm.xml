@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhNdxsModel" table="PERFO_KH_NDXS">
+        
+		  <composite-id>
+			  <key-property name="KHID" column="KHID" type="int" />
+			  <key-property name="JGBM" column="JGBM" type="int" />
+		  </composite-id>
+			<property name="NDXS" column="NDXS" type="decimal" />
+
+      <many-to-one name="Kaohe" class="Enterprise.Model.Perfo.Kh.KhKhglModel" lazy='false' insert="false" update="false">
+        <column name="KHID" />
+      </many-to-one>
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

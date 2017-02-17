@@ -1,0 +1,42 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkDfzbModel" table="PERFO_ZBK_DFZB">
+        
+			<id name="DFZBBM" column="DFZBBM" type="string">			</id>
+			<property name="ZBID" column="ZBID" type="int" />
+			<property name="BBMC" column="BBMC" type="string" />
+			<property name="JXFZ" column="JXFZ" type="decimal" />
+			<property name="PFLX" column="PFLX" type="string" />
+			<property name="SFFJX" column="SFFJX" type="string" />
+			<property name="PFBZ" column="PFBZ" type="string" />
+			<property name="DISABLE" column="DISABLE" type="string" />
+			<property name="DFBDS" column="DFBDS" type="string" />
+			<property name="MAXV" column="MAXV" type="decimal" />
+			<property name="MINV" column="MINV" type="decimal" />
+      <property name="GZID" column="GZID" type="string" />
+      <property name="OLDID" column="OLDID" type="string" />
+      
+      <many-to-one name="Zbxx" class="ZbkZbxxModel" lazy='false' insert="false" update="false">
+        <column name="ZBID" />
+      </many-to-one>
+
+      <many-to-one name="Jsgz" class="ZbkJsgzModel" lazy='false' insert="false" update="false">
+        <column name="GZID" />
+      </many-to-one>
+
+      <bag name="BdfjgLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="DFZBBM" />
+        </key>
+        <one-to-many class="ZbkBdfjgModel" not-found="ignore"/>
+      </bag>
+
+      <bag name="DfzLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="DFZBBM" />
+        </key>
+        <one-to-many class="ZbkDfzModel" not-found="ignore"/>
+      </bag>
+
+    </class>
+</hibernate-mapping>

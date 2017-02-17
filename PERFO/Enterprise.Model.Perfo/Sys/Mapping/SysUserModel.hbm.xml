@@ -1,0 +1,33 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Sys">
+    <class name="SysUserModel" table="PERFO_SYS_USER">
+        
+			<id name="LOGINID" column="LOGINID" type="string">			</id>
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="ROLEID" column="ROLEID" type="string" />
+			<property name="USERNAME" column="USERNAME" type="string" />
+			<property name="PASSWORD" column="PASSWORD" type="string" />
+			<property name="DISABLE" column="DISABLE" type="string" />
+			<property name="IPADDR" column="IPADDR" type="string" />
+			<property name="DUTY" column="DUTY" type="string" />
+			<property name="ADDDATE" column="ADDDATE" type="DateTime" />
+      <property name="MENU" column="MENU" type="string" />
+      <property name="BZ" column="BZ" type="string" />
+
+      <many-to-one name="Role" class="SysRoleModel" lazy='false' insert="false" update="false">
+        <column name="ROLEID" />
+      </many-to-one>
+
+      <many-to-one name="Bmjg" class="SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+      <bag name="FgbmjgLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="LOGINID" />
+        </key>
+        <one-to-many class="SysFgbmjgModel" not-found="ignore" />
+      </bag>
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhZzjgModel" table="PERFO_KH_ZZJG">
+        
+			<id name="JGID" column="JGID" type="int">			</id>
+			<property name="KHID" column="KHID" type="int" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="YSZBKF" column="YSZBKF" type="decimal" />
+			<property name="JFZBDF" column="JFZBDF" type="decimal" />
+			<property name="JJFDF" column="JJFDF" type="decimal" />
+			<property name="LHZBDF" column="LHZBDF" type="decimal" />
+			<property name="YSDF" column="YSDF" type="decimal" />
+			<property name="NDXS" column="NDXS" type="decimal" />
+			<property name="ZZDF" column="ZZDF" type="decimal" />
+			<property name="DFDJ" column="DFDJ" type="string" />
+			<property name="DXBS" column="DXBS" type="decimal" />
+			<property name="SCRQ" column="SCRQ" type="DateTime" />
+			<property name="KHLX" column="KHLX" type="string" />
+			<property name="PMSX" column="PMSX" type="int" />
+
+    </class>
+</hibernate-mapping>

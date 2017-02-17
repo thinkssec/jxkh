@@ -1,0 +1,941 @@
+2016-11-09 22:41:23,542 [15] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysUserpermissionData]>>  Message=<<执行Query方法出错!>>
+NHibernate.ObjectNotFoundException: No row with the given identifier exists[Enterprise.Model.Perfo.Sys.SysModuleModel#101310]
+   在 NHibernate.Impl.SessionFactoryImpl.DefaultEntityNotFoundDelegate.HandleEntityNotFound(String entityName, Object id)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.InternalLoad(String entityName, Object id, Boolean eager, Boolean isNullable)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object id, ISessionImplementor session)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object value, ISessionImplementor session, Object owner)
+   在 NHibernate.Engine.TwoPhaseLoad.InitializeEntity(Object entity, Boolean readOnly, ISessionImplementor session, PreLoadEvent preLoadEvent, PostLoadEvent postLoadEvent)
+   在 NHibernate.Loader.Loader.InitializeEntitiesAndCollections(IList hydratedObjects, Object resultSetId, ISessionImplementor session, Boolean readOnly)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:41:23,854 [9] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysUserpermissionData]>>  Message=<<执行Query方法出错!>>
+NHibernate.ObjectNotFoundException: No row with the given identifier exists[Enterprise.Model.Perfo.Sys.SysModuleModel#101310]
+   在 NHibernate.Impl.SessionFactoryImpl.DefaultEntityNotFoundDelegate.HandleEntityNotFound(String entityName, Object id)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.InternalLoad(String entityName, Object id, Boolean eager, Boolean isNullable)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object id, ISessionImplementor session)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object value, ISessionImplementor session, Object owner)
+   在 NHibernate.Engine.TwoPhaseLoad.InitializeEntity(Object entity, Boolean readOnly, ISessionImplementor session, PreLoadEvent preLoadEvent, PostLoadEvent postLoadEvent)
+   在 NHibernate.Loader.Loader.InitializeEntitiesAndCollections(IList hydratedObjects, Object resultSetId, ISessionImplementor session, Boolean readOnly)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:41:26,511 [9] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysUserpermissionData]>>  Message=<<执行Query方法出错!>>
+NHibernate.ObjectNotFoundException: No row with the given identifier exists[Enterprise.Model.Perfo.Sys.SysModuleModel#101310]
+   在 NHibernate.Impl.SessionFactoryImpl.DefaultEntityNotFoundDelegate.HandleEntityNotFound(String entityName, Object id)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.Load(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.ProxyOrLoad(LoadEvent event, IEntityPersister persister, EntityKey keyToLoad, LoadType options)
+   在 NHibernate.Event.Default.DefaultLoadEventListener.OnLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.FireLoad(LoadEvent event, LoadType loadType)
+   在 NHibernate.Impl.SessionImpl.InternalLoad(String entityName, Object id, Boolean eager, Boolean isNullable)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object id, ISessionImplementor session)
+   在 NHibernate.Type.EntityType.ResolveIdentifier(Object value, ISessionImplementor session, Object owner)
+   在 NHibernate.Engine.TwoPhaseLoad.InitializeEntity(Object entity, Boolean readOnly, ISessionImplementor session, PreLoadEvent preLoadEvent, PostLoadEvent postLoadEvent)
+   在 NHibernate.Loader.Loader.InitializeEntitiesAndCollections(IList hydratedObjects, Object resultSetId, ISessionImplementor session, Boolean readOnly)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:41:32,945 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:41:32,946 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:41:32,947 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:32,947 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:32,947 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:32,947 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:32,947 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:32,948 [8] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:41:42,959 [6] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:41:42,959 [6] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:41:42,960 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:42,960 [6] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:42,960 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:42,960 [6] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:42,960 [6] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:42,961 [6] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:41:52,973 [8] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:41:52,974 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:41:52,974 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:52,974 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:52,975 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:52,975 [8] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:41:52,975 [8] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:41:52,975 [8] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:02,974 [15] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:02,974 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:02,975 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:02,975 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:02,975 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:02,975 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:02,976 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:02,976 [15] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:12,986 [71] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:12,987 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:12,987 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:12,987 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:12,987 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:12,987 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:12,988 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:12,988 [71] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:23,001 [15] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:23,002 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:23,002 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:23,002 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:23,002 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:23,002 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:23,002 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:23,002 [15] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:33,002 [26] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:33,002 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:33,003 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:33,003 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:33,003 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:33,003 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:33,003 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:33,003 [26] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:43,011 [15] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:43,011 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:43,011 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:43,011 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:43,012 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:43,012 [15] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:43,012 [15] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:43,013 [15] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:42:53,016 [26] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:42:53,016 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:42:53,017 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:53,017 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:53,017 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:53,017 [26] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:42:53,017 [26] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:42:53,017 [26] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:43:03,018 [71] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:43:03,019 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:43:03,019 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:03,019 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:43:03,020 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:03,020 [71] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:43:03,020 [71] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:03,020 [71] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697
+2016-11-09 22:43:13,032 [19] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_
+System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+2016-11-09 22:43:13,032 [19] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2016-11-09 22:43:13,032 [19] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:13,032 [19] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:43:13,032 [19] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:13,032 [19] WARN  NHibernate.Util.ADOExceptionReporter [(null)] - System.Data.OracleClient.OracleException (0x80131938): ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+2016-11-09 22:43:13,032 [19] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - ORA-00942: 表或视图不存在
+
+2016-11-09 22:43:13,032 [19] ERROR Enterprise.Component.Infrastructure.Debuger [(null)] - Type Name=<<Enterprise.Component.ORM.ORMDataAccess`1[Enterprise.Data.Perfo.Sys.SysTablechangeData]>>  Message=<<执行Query方法出错!>>
+NHibernate.Exceptions.GenericADOException: could not execute query
+[ select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_ ]
+[SQL: select systablech0_.CHANGEID as CHANGEID29_, systablech0_.USERNAME as USERNAME29_, systablech0_.TABLENAME as TABLENAME29_, systablech0_.CHANGETIME as CHANGETIME29_ from PERFO_SYS_TABLECHANGE systablech0_] ---> System.Data.OracleClient.OracleException: ORA-00942: 表或视图不存在
+
+   在 System.Data.OracleClient.OracleConnection.CheckError(OciErrorHandle errorHandle, Int32 rc)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, Boolean needRowid, OciRowidDescriptor& rowidDescriptor, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.Execute(OciStatementHandle statementHandle, CommandBehavior behavior, ArrayList& resultParameterOrdinals)
+   在 System.Data.OracleClient.OracleCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OracleClient.OracleCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Loader.Loader.List(ISessionImplementor session, QueryParameters queryParameters, ISet`1 querySpaces, IType[] resultTypes)
+   在 NHibernate.Hql.Ast.ANTLR.Loader.QueryLoader.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Hql.Ast.ANTLR.QueryTranslatorImpl.List(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Engine.Query.HQLQueryPlan.PerformList(QueryParameters queryParameters, ISessionImplementor session, IList results)
+   在 NHibernate.Impl.SessionImpl.List(String query, QueryParameters queryParameters, IList results)
+   在 NHibernate.Impl.SessionImpl.List[T](String query, QueryParameters parameters)
+   在 NHibernate.Impl.QueryImpl.List[T]()
+   在 Enterprise.Component.ORM.ORMDataAccess`1.Query[T](String hql) 位置 e:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.ORM\ORMDataAccess.cs:行号 697

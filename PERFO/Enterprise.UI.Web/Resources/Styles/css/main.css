@@ -1,0 +1,270 @@
+﻿/*-------------------下载控制----------------------*/
+.tableborder4 
+{
+    border-left:1px solid #9CC3D9;
+    border-right:1px solid #9CC3D9;
+    border-top:1px solid #9CC3D9;
+    border-bottom: 1px solid #9CC3D9;
+    background-color:#fff;
+}
+.tablebody2 {
+    background-color: #99ffff;
+    line-height: normal;
+}
+.tablebody1 {
+    background-color: #FFFFFF;
+    line-height: normal;
+}
+
+
+body 
+{
+    margin:auto 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+/*-------------------工具栏-----------------------------------------*/
+.toolbars
+{
+    width:880px;    
+    padding-left: 30px;
+    background-repeat:no-repeat;
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-image: url('../images/tbg.jpg');
+}
+
+.toolbars-2
+{
+    clear: both;
+    margin: 0;
+    height: 34px;    
+    font-weight: bold;
+    font-size: 12px;
+    color: #3366CC;
+    border-bottom: solid 1px #ebebeb;
+    margin-bottom: 14px;
+    display: block;
+    position: relative;
+    clear: both;
+    text-indent: 35px;
+    background-image: url('../../easyui1.2.6/themes/gray/images/toolbg.gif');
+}
+.toolbars-2 img
+{width:16px; height:16px; position:absolute; left:9px; top:9px;}
+/*-------------------左侧用户菜单----------------------------------*/
+.leftmenu
+{
+    padding-bottom:2px;
+    background-position: 0px 0px;
+    width: 209px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    float: left;
+    text-indent: 40px;
+    text-decoration: none;
+    overflow: hidden;    
+    color: #3366CC;
+    background-image: url('../../easyui1.2.6/themes/gray/images/menu_arrow.png');
+    background-repeat: no-repeat;
+}
+.leftmenucurrent
+{
+     padding-bottom:2px;
+    background-position: 0px 0px;
+    width: 209px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    float: left;
+    text-indent: 40px;
+    text-decoration: none;
+    overflow: hidden;    
+    color: #FF0000;
+    background-image: url('../../easyui1.2.6/themes/gray/images/menu_arrowb.png');
+    background-repeat: no-repeat;
+}
+
+/*-------------------------导航条-----------------------------------*/
+.vDaohangtiaoHolder
+{
+	margin:3px auto;
+	border:solid 1px #dedede;
+	background:#f2f2f2;
+	width:880px;
+}
+/* Float Clearing*/
+.module:after
+{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+/* float clearing for IE6 */
+* html .module
+{
+	height: 1%;
+	overflow: visible;
+}
+/* float clearing for IE7 */
+* + html .module
+{
+	min-height: 1%;
+}
+/* vDaohangtiao Styles*/
+.vDaohangtiao
+{
+	float: left;
+	display: block;
+	height: 21px;
+	overflow: hidden;
+	padding:5px;	
+}
+.vDaohangtiao ul
+{
+	margin: 0;
+	padding: 0;
+	height: 21px;
+	display: block;
+}
+.vDaohangtiao ul li
+{
+	display: block;
+	float: left;
+	position: relative;
+	height: 21px;
+	overflow: hidden;
+	line-height: 21px;
+	margin: 0px 6px 0px 0;
+	padding: 0px 10px 0px 0;
+	font-size: 1em;
+	background: url(../Images/Chevron.gif) no-repeat 100% 0;
+}
+.vDaohangtiao ul li a
+{
+	display: block;
+	position: relative;
+	height: 21px;
+	line-height: 21px;
+	overflow: hidden;
+	float: left;
+}
+.vDaohangtiao ul li.first a
+{
+	height: 16px !important;
+	text-indent:-1000em;
+	width:16px;
+	padding: 0;
+	margin-top: 2px;
+	overflow: hidden;
+	background:url(../Images/IconHome.gif) no-repeat 0 0;
+}
+.vDaohangtiao ul li.first a:hover
+{
+	background-position: 0 -16px;
+}
+.vDaohangtiao ul li.last
+{
+	background: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+/*------------------------ big Menu-----------------*/
+img {
+	border:0;
+}
+ul {
+	list-style-type:none;
+}
+.bigbutton {
+	display:block;
+	min-width:590px;
+	max-width:1230px;
+	
+}
+
+ul.dash li {
+	float:left;
+	display:inline;
+	margin:0 10px 10px 0;
+}
+
+
+ul.dash li a {
+	display:block;
+	width:106px;
+	height:102px;
+	text-decoration:none;
+}
+
+ul.dash li a img {
+	display:inline;
+	width:48px;
+	margin-left:29px;
+	margin-top:20px;
+}
+
+ul.dash li a span {
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top:4px;
+	font-size:12px;
+}
+#main_toolbar
+{
+    height: 130px;
+    background-image: url('../images/bigbtnbg.jpg');
+    background-repeat: repeat-x;
+}
+#main_toolbar ul.dash {
+	float:left;
+	display:block;
+	margin-bottom:0px;
+}
+#main_toolbar ul.dash li a {
+	 color:#555;
+ background:url('../images/largebut.png') 0 0 no-repeat;
+}
+
+
+#main_toolbar ul.dash li a:hover {
+ background:url('../images/largebut_hover.png') 0 0 no-repeat;
+}
+
+/*-----------------------文档管理  table样式--------------------------*/
+
+.doctable{border-collapse:collapse; text-align:center; margin:0 auto}
+.doctable tr td{border:1px #999 solid; padding:5px;}
+.doctable thead tr th{border:1px #999 solid; padding:5px; width:100px;background:#E1E1E1; line-height:25px}
+.doctable tr{background:#ffffff; }
+.doctable tr:hover{background-color: #DFEAFF;}
+
+/*-----------------------文档调用样式------*/
+
+.list_news{padding-left:10px;float:left;margin-bottom:5px;}
+.list_news ul{margin:0;padding:0;}
+.list_news li{list-style:none;line-height:180%;padding-left:5px;margin-bottom:5px;border-bottom: 1px dashed #C8c8c8;border-bottom-style: dotted;}
+.list_news li a:hover
+{
+    color: #000000;
+    background-color: #B3D9FF;
+}
+
+/*权限操作导航按钮*/
+.menubar_button {cursor:pointer; border:0px;}
+.menubar_button_on
+{
+    cursor: pointer;
+	border:0px solid #d3d3d3;
+	background:url('../../easyui1.2.6/themes/gray/images/button_plain_hover.png') repeat-x left bottom;
+	_padding:0px 5px 0px 0px;
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+}

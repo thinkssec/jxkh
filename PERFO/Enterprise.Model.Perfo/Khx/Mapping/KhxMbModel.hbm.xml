@@ -1,0 +1,13 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Khx">
+    <class name="KhxMbModel" table="PERFO_KHX_MB">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="NAME" column="NAME" type="string" />
+			<property name="MEMO" column="MEMO" type="string" />
+			<property name="ADDTIME" column="ADDTIME" type="DateTime" />
+			<property name="QZ" column="QZ" type="int" />
+			<property name="KHDZBID" column="KHDZBID" type="string" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+﻿*{ font-size:12px; font-family:"Verdana", "Arial", "宋体","细明体", "sans-serif";}
+a{ color:#000; text-decoration:none; }
+a:hover{ color:#999999;border-bottom:1px dashed #083473;text-decoration: none; }
+.operate a{color:#083473; text-decoration:none;background-color:Orange;}
+.operate a:hover{color:#999999;border-bottom:1px dashed #083473;text-decoration: none; background-color:Orange;}
+.menubar_button {background:url(../img/submit_bg.gif) 0px -64px; border:1px solid #8b9c56; height:20px; padding-top:2px; padding-right:5px; cursor:pointer; font-size:12px; font-weight:bold; color:#360; }
+.menubar_button_on {background:url(../img/submit_bg.gif) 0px -8px; border:1px solid #cfab25; height:20px; padding-top:2px; padding-right:5px; cursor:pointer; font-size:12px; font-weight:bold; color:#660000; }
+.menubar_title {font-family: "Verdana", "Arial", "细明体", "sans-serif"; font-size:14px; font-weight:bold; }
+.departMentTree a{ color:#000; text-decoration:none; font-size:12px;}
+.departMentTree a:hover{ background-color:Orange; text-decoration:none; border:0px;}
+.tableDetail{ width:100%; background-color:#F6F9FC;}
+
+/*roleTable*/
+.idTabs{overflow: hidden;}
+.idTabs ul { padding: 5px;float: left;width: 100%;}
+ .idTabs li{list-style: none; /*Try deleting this float*/float: left;height: 26px;text-align: center;vertical-align: middle;}
+.idTabs a{display: block;background: #222; color: snow;padding: 8px;font: bold 14px Arial;text-decoration: none;}
+.idTabs a:hover { color: #999999;text-decoration: none;background-color: Orange;border: 0px; }
+.idTabs a.selected {background: #FFF;color: #000; }
+.items > div{display: none; float: left;margin: 0.1em 0 0 0.5em;}
+.idTabs ul, .idTabs a{border-radius: 4px;-moz-border-radius: 4px;}

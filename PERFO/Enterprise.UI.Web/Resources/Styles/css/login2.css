@@ -1,0 +1,99 @@
+﻿body
+{
+    background-position: top center;
+    margin: 0px auto;
+    background-color: #D3EEF7;
+    background-image: url('../images/loginbgg.png');
+    background-repeat:repeat-x;
+}
+.xlogin
+{
+    width: 1140px;
+    height: 700px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #333333;
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-top: 0px;
+    margin-left: -580px;
+    background-image: url('../images/loginbg.png');
+}
+.loginp
+{
+	position:absolute;
+	top:35%;
+	left:50%;
+	margin-top:20px;
+	margin-left:-70px;	
+}
+	.loginp tr
+{
+	height: 32px;
+}
+textarea, input, select{
+        background: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        color: #000000;
+        font-family: verdana, tahoma, sans-serif;
+        font-size: 12px;
+    margin-top: 0px;
+}
+.username
+{
+    background-image:url(../images/username.png);
+    background-position: 1px 3px;
+    background-repeat:no-repeat;
+    padding-left:20px;
+    line-height:20px;
+    height:20px;
+    FONT-SIZE: 12px;
+}
+.password
+{
+    background-image:url(../images/password.png);
+    background-position: 1px 3px;
+    background-repeat:no-repeat;
+    padding-left:20px;
+    line-height:20px;
+    height:20px;
+    FONT-SIZE: 12px;
+}
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    background: transparent url('../images/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: right;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('../images/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+} 
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+} 
+
+
+

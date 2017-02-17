@@ -1,0 +1,19 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhSjsbModel" table="PERFO_KH_SJSB">
+        
+		  <composite-id>
+			  <key-property name="KHID" column="KHID" type="int" />
+			  <key-property name="JGBM" column="JGBM" type="int" />
+		  </composite-id>
+			<property name="SBZT" column="SBZT" type="string" />
+			<property name="SBSJ" column="SBSJ" type="DateTime" />
+			<property name="SBR" column="SBR" type="string" />
+			<property name="SBFJ" column="SBFJ" type="string" />
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

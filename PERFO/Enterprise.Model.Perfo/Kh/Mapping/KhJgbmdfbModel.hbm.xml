@@ -1,0 +1,20 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhJgbmdfbModel" table="PERFO_KH_JGBMDFB">
+        
+			<id name="DFBID" column="DFBID" type="string">			</id>
+			<property name="ID" column="ID" type="string" />
+			<property name="DFZBID" column="DFZBID" type="string" />
+			<property name="ZBBM" column="ZBBM" type="string" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="WCJD" column="WCJD" type="int" />
+			<property name="KHDF" column="KHDF" type="decimal" />
+			<property name="DFSM" column="DFSM" type="string" />
+			<property name="DFZ" column="DFZ" type="string" />
+			<property name="DFSJ" column="DFSJ" type="DateTime" />
+			<property name="DFZLX" column="DFZLX" type="string" />
+			<property name="DFQZ" column="DFQZ" type="decimal" />
+
+    </class>
+</hibernate-mapping>

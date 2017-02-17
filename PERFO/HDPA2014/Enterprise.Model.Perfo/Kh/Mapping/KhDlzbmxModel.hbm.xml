@@ -1,0 +1,60 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhDlzbmxModel" table="PERFO_KH_DLZBMX">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="SXID" column="SXID" type="string" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="ZBBM" column="ZBBM" type="string" />
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="NCMBZ" column="NCMBZ" type="decimal" />
+			<property name="MBZSQZ" column="MBZSQZ" type="decimal" />
+			<property name="MBZSQBZ" column="MBZSQBZ" type="string" />
+			<property name="MBZ" column="MBZ" type="decimal" />
+      <property name="WCZ" column="WCZ" type="decimal" />
+			<property name="MBZBZ" column="MBZBZ" type="string" />
+      <property name="WCZBZ" column="WCZBZ" type="string" />
+			<property name="MBZQRR" column="MBZQRR" type="string" />
+			<property name="WCZSQZ" column="WCZSQZ" type="decimal" />
+			<property name="WCZSQR" column="WCZSQR" type="string" />
+			<property name="WCZSQBZ" column="WCZSQBZ" type="string" />
+			<property name="WCZSHZ" column="WCZSHZ" type="decimal" />
+			<property name="WCZSHR" column="WCZSHR" type="string" />
+			<property name="WCZSHBZ" column="WCZSHBZ" type="string" />
+			<property name="WCZSDZ" column="WCZSDZ" type="decimal" />
+			<property name="WCZSDBZ" column="WCZSDBZ" type="string" />
+			<property name="WCZSDR" column="WCZSDR" type="string" />
+			<property name="ZBKHZT" column="ZBKHZT" type="string" />
+			<property name="MBZQRRQ" column="MBZQRRQ" type="DateTime" />
+			<property name="WCZSQRQ" column="WCZSQRQ" type="DateTime" />
+			<property name="WCZSHRQ" column="WCZSHRQ" type="DateTime" />
+			<property name="WCZSDRQ" column="WCZSDRQ" type="DateTime" />
+			<property name="BFSFZ" column="BFSFZ" type="decimal" />
+			<property name="SJDF" column="SJDF" type="decimal" />
+			<property name="KHDX" column="KHDX" type="string" />
+      <property name="DFJSQK" column="DFJSQK" type="string" />
+
+      <many-to-one name="ZbsxModel" class="Enterprise.Model.Perfo.Kh.KhZbsxModel" lazy='false' insert="false" update="false">
+        <column name="SXID" />
+      </many-to-one>
+
+      <many-to-one name="LhzbModel" class="Enterprise.Model.Perfo.Zbk.ZbkLhzbModel" lazy='false' insert="false" update="false">
+        <column name="ZBBM" />
+      </many-to-one>
+
+      <bag name="KhJgbmdfbLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="ID" />
+        </key>
+        <one-to-many class="Enterprise.Model.Perfo.Kh.KhJgbmdfbModel" not-found="ignore"/>
+      </bag>
+
+      <bag name="LhzbjcsjLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="ID" />
+        </key>
+        <one-to-many class="Enterprise.Model.Perfo.Kh.KhLhzbjcsjModel" not-found="ignore"/>
+      </bag>
+      
+    </class>
+</hibernate-mapping>

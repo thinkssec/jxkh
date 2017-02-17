@@ -1,0 +1,16 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkJsgzModel" table="PERFO_ZBK_JSGZ">
+        
+			<id name="GZID" column="GZID" type="string">			</id>
+			<property name="BBMC" column="BBMC" type="string" />
+			<property name="GZMC" column="GZMC" type="string" />
+			<property name="GZBDS" column="GZBDS" type="string" />
+			<property name="MAXV" column="MAXV" type="decimal" />
+			<property name="MINV" column="MINV" type="decimal" />
+			<property name="UPPER" column="UPPER" type="decimal" />
+			<property name="LOWER" column="LOWER" type="decimal" />
+      <property name="METHODNAME" column="METHODNAME" type="string" />
+      
+    </class>
+</hibernate-mapping>

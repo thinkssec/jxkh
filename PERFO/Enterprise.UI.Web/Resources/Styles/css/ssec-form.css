@@ -1,0 +1,164 @@
+﻿.ssec-form { margin:7px;}
+.ssec-form .ssec-group{ clear:both; margin:0; height:28px; line-height:28px; font-weight:bold; font-size:12px; color:#333; border-bottom:solid 1px #ebebeb; margin-bottom:14px; display:block; position:relative; clear:both;}
+.ssec-form .ssec-group-bottom{ clear:both; margin:0; height:28px; line-height:28px; font-weight:bold; font-size:12px; color:#333; border-top:solid 1px #ebebeb; margin-top:14px; padding-top:12px; display:block; position:relative; clear:both;}
+
+.ssec-form .ssec-group-hasicon{ padding-left:30px;}
+.ssec-form .ssec-group-hasicon img{ width:16px; height:16px; position:absolute; left:6px; top:6px;}
+.ssec-form ul, .ssec-form li{ list-style:none;}
+.ssec-form ul{ clear:both; margin-top:2px; margin-bottom:2px;}
+.ssec-form li{ float:left; overflow:hidden; text-align:left;  line-height:23px;padding:0; padding-top:2px; padding-bottom:2px;} 
+.ssec-form li textarea{
+}
+.ssec-hidden{ display:none;}
+.ssec-textarea{border:1px solid #D0D0D0; margin-left:0px;outline:none; background:#FFFFFF url('images/input.gif') repeat-x top;}
+.ssec-border li
+{
+    border-style: none none dotted none;
+    border-width: 1px;
+    border-color: #d0d0d0;
+}
+.ssec-text
+{
+    /*position:relative; background:#FFFFFF url('images/input.gif') repeat-x top;
+    border:1px solid #D0D0D0; height:20px; line-height:20px;*/
+}
+.ssec-text-ru
+{
+    padding-left:10px;
+    position:relative; background:#FFFFFF url('images/input.gif') repeat-x top;
+    border:0px solid #D0D0D0; height:20px; line-height:20px;
+}
+.ssec-text-show
+{
+    padding-left:10px;
+    position:relative; background:#FFFFFF url('images/input.gif') repeat-x top;
+    border:0px solid #D0D0D0; line-height:20px;
+}
+.ssec-text-field
+{
+    position:absolute; top:0px; left:0px; background:#FFFFFF url('images/input.gif') repeat-x top;
+    height:18px; line-height:18px;
+    border:0; margin:0; outline:none; color:#333333; 
+    width:99%;
+}
+.ssec-label
+{
+    width:120px; 
+    text-align:left;
+}
+.ssec-label-ru
+{
+    width:120px; 
+    text-align:right;
+}
+.ssec-label-show
+{
+    width:200px; 
+    text-align:right;
+    border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;border-top:1px solid #000000;
+}
+.bottomline 
+{
+    vertical-align:bottom;
+    margin-left:5px;
+    border-bottom:1px solid #000000;border-right:0px solid #000000;border-left:0px solid #000000;border-top:0px solid #000000;
+}
+.normal{width:200px;}
+.large{width:532px;}
+.labelH
+{
+    height:36px;
+}
+.textH
+{
+    height:70px;
+}
+.middle{width:200px;}
+.max{width:760px;}
+.blue
+{
+    color: #3366CC;
+}
+.ssec-text-disabled .ssec-text-field{background:#E0E0E0;}
+.ssec-form-button a.button {
+    background: transparent url('../images/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: right;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+.ssec-form-button a.button span {
+    background: transparent url('../images/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+} 
+.ssec-form-button a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+.ssec-form-button a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+} 
+
+.ssec-table
+{
+    border:1px solid #CCCCCC;
+    border-collapse: collapse;
+    font-size:12px;
+    padding:0px;
+}
+.ssec-table a:link
+{
+    color: #666666;
+    text-decoration: none;
+}
+.ssec-table a:hover
+{
+    color: #3366CC;
+}
+.ssec-table a:visited
+{
+    color: #666666;
+    font-weight:normal;
+}
+.ssec-table th
+{
+    background-position: center;
+    font: bold 12px "Trebuchet MS" , Verdana, Arial, Helvetica, sans-serif;
+    color: #666666;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4px 4px 4px 4px;
+    background: repeat;
+    border-top-color: #CCCCCC;
+    border-right-color: #CCCCCC;
+    border-bottom-color: #CCCCCC;
+}
+.ssec-table td
+{
+border-right: 1px solid #CCCCCC; 
+border-bottom: 1px solid #CCCCCC; 
+font-size:12px; 
+padding: 5px 12px 5px 12px; 
+color: #4f6b72; 
+}
+.tableeven {
+    background: #F5F5F5;
+}
+.tablehighlight
+{
+    background: #FFE4DF;
+}

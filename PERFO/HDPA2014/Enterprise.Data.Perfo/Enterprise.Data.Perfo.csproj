@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterprise.Data.Perfo</RootNamespace>
+    <AssemblyName>Enterprise.Data.Perfo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=e25d51331ec975e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Enterprise.UI.Web\Lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Enterprise.UI.Web\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>..\..\..\..\LMFL2015\Code\EnterpriseSolution\Enterprise.UI.Web\Lib\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.0.0.4000, Culture=neutral, PublicKeyToken=e25d51331ec975e3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Enterprise.UI.Web\Lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDataPerfo.cs" />
+    <Compile Include="Kh\Interface\IKhArticlesData.cs" />
+    <Compile Include="Kh\Interface\IKhCjqjData.cs" />
+    <Compile Include="Kh\Interface\IKhCwjcsjData.cs" />
+    <Compile Include="Kh\Interface\IKhDfzbmxData.cs" />
+    <Compile Include="Kh\Interface\IKhDlzbmxData.cs" />
+    <Compile Include="Kh\Interface\IKhEjdwkhdfData.cs" />
+    <Compile Include="Kh\Interface\IKhHbjfgzData.cs" />
+    <Compile Include="Kh\Interface\IKhJgbmdfbData.cs" />
+    <Compile Include="Kh\Interface\IKhJgbmkhdfData.cs" />
+    <Compile Include="Kh\Interface\IKhJgzfbData.cs" />
+    <Compile Include="Kh\Interface\IKhJxzrsData.cs" />
+    <Compile Include="Kh\Interface\IKhJxzrszbData.cs" />
+    <Compile Include="Kh\Interface\IKhKhdfpxfwData.cs" />
+    <Compile Include="Kh\Interface\IKhKhglData.cs" />
+    <Compile Include="Kh\Interface\IKhKindData.cs" />
+    <Compile Include="Kh\Interface\IKhKindhbData.cs" />
+    <Compile Include="Kh\Interface\IKhLhzbjcsjData.cs" />
+    <Compile Include="Kh\Interface\IKhMessageData.cs" />
+    <Compile Include="Kh\Interface\IKhNdxsData.cs" />
+    <Compile Include="Kh\Interface\IKhNoderunData.cs" />
+    <Compile Include="Kh\Interface\IKhNodesData.cs" />
+    <Compile Include="Kh\Interface\IKhSigninData.cs" />
+    <Compile Include="Kh\Interface\IKhSjsbData.cs" />
+    <Compile Include="Kh\Interface\IKhTjbData.cs" />
+    <Compile Include="Kh\Interface\IKhUnlockData.cs" />
+    <Compile Include="Kh\Interface\IKhZbsxData.cs" />
+    <Compile Include="Kh\Interface\IKhZzjgData.cs" />
+    <Compile Include="Kh\Interface\IKhZzjgfileData.cs" />
+    <Compile Include="Kh\KhArticlesData.cs" />
+    <Compile Include="Kh\KhCjqjData.cs" />
+    <Compile Include="Kh\KhCwjcsjData.cs" />
+    <Compile Include="Kh\KhDfzbmxData.cs" />
+    <Compile Include="Kh\KhDlzbmxData.cs" />
+    <Compile Include="Kh\KhEjdwkhdfData.cs" />
+    <Compile Include="Kh\KhHbjfgzData.cs" />
+    <Compile Include="Kh\KhJgbmdfbData.cs" />
+    <Compile Include="Kh\KhJgbmkhdfData.cs" />
+    <Compile Include="Kh\KhJgzfbData.cs" />
+    <Compile Include="Kh\KhJxzrsData.cs" />
+    <Compile Include="Kh\KhJxzrszbData.cs" />
+    <Compile Include="Kh\KhKhdfpxfwData.cs" />
+    <Compile Include="Kh\KhKhglData.cs" />
+    <Compile Include="Kh\KhKindData.cs" />
+    <Compile Include="Kh\KhKindhbData.cs" />
+    <Compile Include="Kh\KhLhzbjcsjData.cs" />
+    <Compile Include="Kh\KhMessageData.cs" />
+    <Compile Include="Kh\KhNdxsData.cs" />
+    <Compile Include="Kh\KhNoderunData.cs" />
+    <Compile Include="Kh\KhNodesData.cs" />
+    <Compile Include="Kh\KhSigninData.cs" />
+    <Compile Include="Kh\KhSjsbData.cs" />
+    <Compile Include="Kh\KhTjbData.cs" />
+    <Compile Include="Kh\KhUnlockData.cs" />
+    <Compile Include="Kh\KhZbsxData.cs" />
+    <Compile Include="Kh\KhZzjgData.cs" />
+    <Compile Include="Kh\KhZzjgfileData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sys\Interface\ISysBmjgData.cs" />
+    <Compile Include="Sys\Interface\ISysCacheData.cs" />
+    <Compile Include="Sys\Interface\ISysFgbmjgData.cs" />
+    <Compile Include="Sys\Interface\ISysModuleData.cs" />
+    <Compile Include="Sys\Interface\ISysPermissiontypeData.cs" />
+    <Compile Include="Sys\Interface\ISysRoleData.cs" />
+    <Compile Include="Sys\Interface\ISysRolepermissionData.cs" />
+    <Compile Include="Sys\Interface\ISysTablechangeData.cs" />
+    <Compile Include="Sys\Interface\ISysUserData.cs" />
+    <Compile Include="Sys\Interface\ISysUserpermissionData.cs" />
+    <Compile Include="Sys\Interface\ISysVisitlogData.cs" />
+    <Compile Include="Sys\SysBmjgData.cs" />
+    <Compile Include="Sys\SysCacheData.cs" />
+    <Compile Include="Sys\SysFgbmjgData.cs" />
+    <Compile Include="Sys\SysModuleData.cs" />
+    <Compile Include="Sys\SysPermissiontypeData.cs" />
+    <Compile Include="Sys\SysRoleData.cs" />
+    <Compile Include="Sys\SysRolepermissionData.cs" />
+    <Compile Include="Sys\SysTablechangeData.cs" />
+    <Compile Include="Sys\SysUserData.cs" />
+    <Compile Include="Sys\SysUserpermissionData.cs" />
+    <Compile Include="Sys\SysVisitlogData.cs" />
+    <Compile Include="Zbk\Interface\IZbkBanbenData.cs" />
+    <Compile Include="Zbk\Interface\IZbkBdfjgData.cs" />
+    <Compile Include="Zbk\Interface\IZbkCwjcsjglzbData.cs" />
+    <Compile Include="Zbk\Interface\IZbkDfzbData.cs" />
+    <Compile Include="Zbk\Interface\IZbkDfzData.cs" />
+    <Compile Include="Zbk\Interface\IZbkJsgzData.cs" />
+    <Compile Include="Zbk\Interface\IZbkLhzbData.cs" />
+    <Compile Include="Zbk\Interface\IZbkMbzshData.cs" />
+    <Compile Include="Zbk\Interface\IZbkMbztbData.cs" />
+    <Compile Include="Zbk\Interface\IZbkWczshdfData.cs" />
+    <Compile Include="Zbk\Interface\IZbkWcztbData.cs" />
+    <Compile Include="Zbk\Interface\IZbkZbxxData.cs" />
+    <Compile Include="Zbk\ZbkBanbenData.cs" />
+    <Compile Include="Zbk\ZbkBdfjgData.cs" />
+    <Compile Include="Zbk\ZbkCwjcsjglzbData.cs" />
+    <Compile Include="Zbk\ZbkDfzbData.cs" />
+    <Compile Include="Zbk\ZbkDfzData.cs" />
+    <Compile Include="Zbk\ZbkJsgzData.cs" />
+    <Compile Include="Zbk\ZbkLhzbData.cs" />
+    <Compile Include="Zbk\ZbkMbzshData.cs" />
+    <Compile Include="Zbk\ZbkMbztbData.cs" />
+    <Compile Include="Zbk\ZbkWczshdfData.cs" />
+    <Compile Include="Zbk\ZbkWcztbData.cs" />
+    <Compile Include="Zbk\ZbkZbxxData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.Component.Cache\Enterprise.Component.Cache.csproj">
+      <Project>{e38ddbf0-a978-4e6e-bfab-15a25b08de1c}</Project>
+      <Name>Enterprise.Component.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Component.Infrastructure\Enterprise.Component.Infrastructure.csproj">
+      <Project>{a439b7bb-89f3-4bd1-87b8-259300139afa}</Project>
+      <Name>Enterprise.Component.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Component.ORM\Enterprise.Component.ORM.csproj">
+      <Project>{833f8e42-5ab8-499a-91a1-bf39f7bc0f53}</Project>
+      <Name>Enterprise.Component.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enterprise.Model.Perfo\Enterprise.Model.Perfo.csproj">
+      <Project>{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}</Project>
+      <Name>Enterprise.Model.Perfo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

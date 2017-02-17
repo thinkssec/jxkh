@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhKindModel" table="PERFO_KH_KIND">
+        
+			<id name="LXID" column="LXID" type="string">			</id>
+			<property name="LXMC" column="LXMC" type="string" />
+			<property name="SXSJ" column="SXSJ" type="DateTime" />
+			<property name="DQZT" column="DQZT" type="string" />
+
+    </class>
+</hibernate-mapping>

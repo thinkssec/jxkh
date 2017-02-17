@@ -1,0 +1,16 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhHbjfgzModel" table="PERFO_KH_HBJFGZ">
+        
+			<id name="HBJFID" column="HBJFID" type="string">			</id>
+      <property name="HBJFMC" column="HBJFMC" type="string" />
+      <property name="KHID" column="KHID" type="int" />
+			<property name="HBJFDW" column="HBJFDW" type="string" />
+			<property name="GZID" column="GZID" type="string" />
+
+      <many-to-one name="Jsgz" class="Enterprise.Model.Perfo.Zbk.ZbkJsgzModel" lazy='false' insert="false" update="false">
+        <column name="GZID" />
+      </many-to-one>
+
+    </class>
+</hibernate-mapping>

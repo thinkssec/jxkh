@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhJgbmkhdfModel" table="PERFO_KH_JGBMKHDF">
+        
+			<id name="DFID" column="DFID" type="string">			</id>
+			<property name="JGBM" column="JGBM" type="int" />
+			<property name="KHID" column="KHID" type="int" />
+			<property name="KHXMC" column="KHXMC" type="string" />
+			<property name="KHDF" column="KHDF" type="decimal" />
+			<property name="KHLX" column="KHLX" type="string" />
+			<property name="TJSJ" column="TJSJ" type="DateTime" />
+			<property name="CZR" column="CZR" type="string" />
+			<property name="XMXH" column="XMXH" type="string" />
+			<property name="KHDWSL" column="KHDWSL" type="int" />
+			<property name="BMZDF" column="BMZDF" type="decimal" />
+			<property name="BMPJF" column="BMPJF" type="decimal" />
+			<property name="BMPM" column="BMPM" type="int" />
+      <property name="BMDXBS" column="BMDXBS" type="decimal" />
+      <property name="BZSM" column="BZSM" type="string" />
+			<property name="FZRZDF" column="FZRZDF" type="decimal" />
+			<property name="FZRPJF" column="FZRPJF" type="decimal" />
+			<property name="FZRDXBS" column="FZRDXBS" type="decimal" />
+			<property name="FZRPM" column="FZRPM" type="int" />
+			<property name="HZBZ" column="HZBZ" type="string" />
+
+      <many-to-one name="Bmjg" class="Enterprise.Model.Perfo.Sys.SysBmjgModel" lazy='false' insert="false" update="false">
+        <column name="JGBM" />
+      </many-to-one>
+      
+    </class>
+</hibernate-mapping>

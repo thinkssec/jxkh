@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.ORM", "Enterprise.Component.ORM\Enterprise.Component.ORM.csproj", "{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.Infrastructure", "Enterprise.Component.Infrastructure\Enterprise.Component.Infrastructure.csproj", "{A439B7BB-89F3-4BD1-87B8-259300139AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Model.Perfo", "Enterprise.Model.Perfo\Enterprise.Model.Perfo.csproj", "{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Data.Perfo", "Enterprise.Data.Perfo\Enterprise.Data.Perfo.csproj", "{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Service.Perfo", "Enterprise.Service.Perfo\Enterprise.Service.Perfo.csproj", "{A73EFB83-1370-4480-8CB7-A01004A76BB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.UI.Web", "Enterprise.UI.Web\Enterprise.UI.Web.csproj", "{68A68314-6309-49CB-8AFF-33198A97F5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.MVC", "Enterprise.Component.MVC\Enterprise.Component.MVC.csproj", "{89D12F43-DF2A-45CE-8013-1376A51F3149}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Component.Cache", "Enterprise.Component.Cache\Enterprise.Component.Cache.csproj", "{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://thinksky.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = Enterprise.Component.ORM\\Enterprise.Component.ORM.csproj
+		SccProjectName0 = Enterprise.Component.ORM
+		SccAuxPath0 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath0 = Enterprise.Component.ORM
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Enterprise.Component.Infrastructure\\Enterprise.Component.Infrastructure.csproj
+		SccProjectName1 = Enterprise.Component.Infrastructure
+		SccAuxPath1 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath1 = Enterprise.Component.Infrastructure
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Enterprise.Model.Perfo\\Enterprise.Model.Perfo.csproj
+		SccProjectName2 = Enterprise.Model.Perfo
+		SccAuxPath2 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath2 = Enterprise.Model.Perfo
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Enterprise.Data.Perfo\\Enterprise.Data.Perfo.csproj
+		SccProjectName3 = Enterprise.Data.Perfo
+		SccAuxPath3 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath3 = Enterprise.Data.Perfo
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = Enterprise.Service.Perfo\\Enterprise.Service.Perfo.csproj
+		SccProjectName4 = Enterprise.Service.Perfo
+		SccAuxPath4 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath4 = Enterprise.Service.Perfo
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = Enterprise.UI.Web\\Enterprise.UI.Web.csproj
+		SccProjectName5 = Enterprise.UI.Web
+		SccAuxPath5 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath5 = Enterprise.UI.Web
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = Enterprise.Component.MVC\\Enterprise.Component.MVC.csproj
+		SccProjectName6 = Enterprise.Component.MVC
+		SccAuxPath6 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath6 = Enterprise.Component.MVC
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName7 = Enterprise.Component.Cache\\Enterprise.Component.Cache.csproj
+		SccProjectName7 = Enterprise.Component.Cache
+		SccAuxPath7 = https://thinksky.visualstudio.com/defaultcollection
+		SccLocalPath7 = Enterprise.Component.Cache
+		SccProvider7 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833F8E42-5AB8-499A-91A1-BF39F7BC0F53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A439B7BB-89F3-4BD1-87B8-259300139AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281C1366-4A0C-44A9-B3E1-F4F19D218BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D1AFB1-79D6-4E32-A3C2-4FADD9DA40A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73EFB83-1370-4480-8CB7-A01004A76BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A68314-6309-49CB-8AFF-33198A97F5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89D12F43-DF2A-45CE-8013-1376A51F3149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38DDBF0-A978-4E6E-BFAB-15A25B08DE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

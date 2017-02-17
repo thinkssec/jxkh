@@ -1,0 +1,22 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhArticlesModel" table="PERFO_KH_ARTICLES">
+        
+			<id name="TZID" column="TZID" type="string">			</id>
+			<property name="TZBT" column="TZBT" type="string" />
+			<property name="TZNR" column="TZNR" type="string" />
+			<property name="TZZZ" column="TZZZ" type="string" />
+			<property name="TJRQ" column="TJRQ" type="DateTime" />
+			<property name="TZFJ" column="TZFJ" type="string" />
+			<property name="LLCS" column="LLCS" type="int" />
+			<property name="TZLX" column="TZLX" type="string" />
+
+      <bag name="SigninLst" inverse="true" cascade="none" lazy="false">
+        <key>
+          <column name="TZID" />
+        </key>
+        <one-to-many class="Enterprise.Model.Perfo.Kh.KhSigninModel" not-found="ignore"/>
+      </bag>
+
+    </class>
+</hibernate-mapping>

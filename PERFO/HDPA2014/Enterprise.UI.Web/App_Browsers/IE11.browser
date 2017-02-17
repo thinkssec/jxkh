@@ -1,0 +1,20 @@
+<browsers>
+<browser id="InternetExplorer" parentID="Mozilla">
+        <identification>
+       <userAgent match="Trident/(?'layoutVersion'[7-9]|0*[1-9]\d+)(\.\d+)?;(.*;)?\s*rv:(?'version'(?'major'\d+)(\.(?'minor'\d+)))" />
+      <userAgent nonMatch="IEMobile" />
+          <userAgent nonMatch="MSIE " />
+        </identification>    
+    <capabilities>
+          <capability name="browser"              value="InternetExplorer" />
+          <capability name="version"              value="${version}" />
+          <capability name="majorversion"         value="${major}" />
+          <capability name="minorversion"         value="${minor}" />
+          <capability name="layoutEngine"         value="Trident" />
+          <capability name="layoutEngineVersion"  value="${layoutVersion}" />
+          <capability name="type"                 value="InternetExplorer${major}" />
+        </capabilities>
+      </browser>
+</browsers>
+
+    

@@ -1,0 +1,12 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Khs">
+    <class name="KhsKhdzbModel" table="PERFO_KHS_KHDZB">
+        
+			<id name="ID" column="ID" type="string">			</id>
+			<property name="KHID" column="KHID" type="int" />
+			<property name="DZBID" column="DZBID" type="string" />
+			<property name="PX" column="PX" type="decimal" />
+			<property name="STATUS" column="STATUS" type="int" />
+
+    </class>
+</hibernate-mapping>

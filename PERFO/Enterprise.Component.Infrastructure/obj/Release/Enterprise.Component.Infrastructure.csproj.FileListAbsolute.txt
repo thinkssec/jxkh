@@ -1,0 +1,11 @@
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Enterprise.Component.Infrastructure.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Enterprise.Component.Infrastructure.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\FredCK.FCKeditorV2.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\log4net.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Microsoft.Practices.Unity.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Microsoft.Practices.ServiceLocation.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\bin\Release\Microsoft.Practices.Unity.Interception.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\obj\Release\Enterprise.Component.Infrastructure.csprojResolveAssemblyReference.cache
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\obj\Release\Enterprise.Component.Infrastructure.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.Infrastructure\obj\Release\Enterprise.Component.Infrastructure.pdb

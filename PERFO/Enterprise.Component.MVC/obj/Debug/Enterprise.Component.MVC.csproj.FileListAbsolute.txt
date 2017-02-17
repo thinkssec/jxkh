@@ -1,0 +1,4 @@
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\bin\Debug\Enterprise.Component.MVC.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\bin\Debug\Enterprise.Component.MVC.pdb
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\obj\Debug\Enterprise.Component.MVC.dll
+E:\workspace\新建文件夹 (2)\jxkh\PERFO\Enterprise.Component.MVC\obj\Debug\Enterprise.Component.MVC.pdb

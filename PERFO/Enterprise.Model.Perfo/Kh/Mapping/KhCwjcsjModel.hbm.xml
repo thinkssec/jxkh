@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhCwjcsjModel" table="PERFO_KH_CWJCSJ">
+        
+			<id name="CWZBID" column="CWZBID" type="string">			</id>
+      <property name="ZBMC" column="ZBMC" type="string" />
+      <property name="JGBM" column="JGBM" type="int" />
+      <property name="XH" column="XH" type="int" />
+			<property name="NF" column="NF" type="int" />
+			<property name="M1" column="M1" type="decimal" />
+			<property name="M2" column="M2" type="decimal" />
+			<property name="M3" column="M3" type="decimal" />
+			<property name="M4" column="M4" type="decimal" />
+			<property name="M5" column="M5" type="decimal" />
+			<property name="M6" column="M6" type="decimal" />
+			<property name="M7" column="M7" type="decimal" />
+			<property name="M8" column="M8" type="decimal" />
+			<property name="M9" column="M9" type="decimal" />
+			<property name="M10" column="M10" type="decimal" />
+			<property name="M11" column="M11" type="decimal" />
+			<property name="M12" column="M12" type="decimal" />
+			<property name="SL" column="SL" type="int" />
+			<property name="PJZ" column="PJZ" type="decimal" />
+			<property name="LJZ" column="LJZ" type="decimal" />
+			<property name="BZ1" column="BZ1" type="string" />
+			<property name="BZ2" column="BZ2" type="string" />
+			<property name="BZD1" column="BZD1" type="decimal" />
+			<property name="BZD2" column="BZD2" type="decimal" />
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Kh">
+    <class name="KhKhglModel" table="PERFO_KH_KHGL">
+
+      <id name="KHID" column="KHID" type="int">
+        <!--id中参数的设置问:native/assigned/foreign/increment-->
+        <generator class="native"></generator>
+      </id>
+			<property name="LXID" column="LXID" type="string" />
+			<property name="KHMC" column="KHMC" type="string" />
+			<property name="KHND" column="KHND" type="string" />
+			<property name="KHZQ" column="KHZQ" type="string" />
+			<property name="KSSJ" column="KSSJ" type="DateTime" />
+			<property name="GBSJ" column="GBSJ" type="DateTime" />
+			<property name="KHZT" column="KHZT" type="string" />
+			<property name="FQR" column="FQR" type="string" />
+			<property name="SFKC" column="SFKC" type="string" />
+      <property name="BBMC" column="BBMC" type="string" />
+      <property name="KHJD" column="KHJD" type="int" />
+      <property name="KHYD" column="KHYD" type="int" />
+
+      <many-to-one name="Kind" class="KhKindModel" lazy='false' insert="false" update="false">
+        <column name="LXID" />
+      </many-to-one>
+      
+    </class>
+</hibernate-mapping>

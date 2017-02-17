@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkMbztbModel" table="PERFO_ZBK_MBZTB">
+        
+		<composite-id>
+			<key-property name="LHZBBM" column="LHZBBM" type="string" />
+			<key-property name="JGBM" column="JGBM" type="int" />
+		</composite-id>
+
+    </class>
+</hibernate-mapping>

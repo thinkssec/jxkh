@@ -1,0 +1,81 @@
+﻿.GridViewStyle
+{
+    font-family:Times New Roman;
+    border-style: dotted;
+    border-color: #808080;
+    font-size: 12px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-collapse: collapse;
+}
+table
+{
+	border-collapse: collapse;
+}
+.GridViewStyle a
+{
+    color: #333333;
+}
+
+.GridViewHeaderStyle
+{
+    font-weight:bolder; 
+    color: #333333;    
+    border-collapse: collapse;
+}
+.GridViewHeaderStyle tr, th
+{
+	background-color: #F2F2F2;
+	background-image: url('../themes/default/images/datagrid_title_bg.png');
+    height:24px;
+}
+.GridViewFooterStyle
+{
+    background-color: #ACD2FC;
+    font-weight: bold;
+    color: White;
+}
+.GridViewRowStyle
+{
+    color: #333333;
+}
+.GridViewRowStyle, td, th
+{
+    padding:4px 4px;
+}
+
+.GridViewAlternatingRowStyle
+{
+    /*background-color: #E4EEFC;*/
+    background-color: #F7F7F7;
+}
+
+.GridViewSelectedRowStyle, td, th
+{
+	border-width: 1px;
+	border-color: #808080;
+	border-style: dotted;
+	font-size: 12px;
+	border-collapse: collapse;
+}
+
+.GridViewPagerStyle
+{    
+    background-color: #F7F7F7;
+    color: #FFFFFF;
+}
+.GridViewPagerStyle table td
+{
+    border-width: 0px;
+    border-style: solid;
+}
+.GridViewPagerStyle tr td span
+{BORDER-RIGHT: #000099 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #000099 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #000099 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #000099 1px solid; BACKGROUND-COLOR: #000099 }
+.GridViewPagerStyle tr td         
+{PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center} 
+.GridViewPagerStyle tr td a
+{BORDER-RIGHT: #aaaadd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #aaaadd 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #aaaadd 1px solid; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaadd 1px solid; TEXT-DECORATION: none        }
+.GridViewPagerStyle tr td A:hover {BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid        }
+.GridViewPagerStyle tr td A:active {BORDER-RIGHT: #000099 1px solid; BORDER-TOP: #000099 1px solid; BORDER-LEFT: #000099 1px solid; COLOR: #000; BORDER-BOTTOM: #000099 1px solid        }

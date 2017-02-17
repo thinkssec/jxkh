@@ -1,0 +1,35 @@
+#leftmenu
+{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	clip: rect(auto auto auto auto);
+	margin-top: 5px;
+}
+#leftmenu a
+{
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+#leftmenu a:hover {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+.SelectedTreeNode
+{
+    font-family: arial, verdana; 
+    font-size: 12px;
+    padding-left : 1px; 
+    background-color:Orange;
+    text-decoration: underline; 
+    cursor:pointer;
+}
+body
+{
+	background-color: #F3F7FB;
+	background-image: url(../Images/tree/m_head_blend.png);
+	background-repeat: no-repeat;
+}

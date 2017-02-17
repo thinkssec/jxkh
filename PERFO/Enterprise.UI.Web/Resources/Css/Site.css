@@ -1,0 +1,22 @@
+﻿.GridViewAlternatingRowStyle {
+    /*background-color: #E4EEFC;*/
+    background-color: #F7F7F7;
+}
+
+.msg-info {
+    background: #FFFEE6;
+    color: #8F5700;
+    padding: 12px;
+}
+
+.msg-tip {
+    width: 24px;
+    height: 16px;
+    float: left;
+}
+
+.btn-bgcolor {
+    background: #c6f8f8; 
+    padding: 5px; 
+    width: auto;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"  assembly="Enterprise.Model.Perfo" namespace="Enterprise.Model.Perfo.Zbk">
+    <class name="ZbkDfzModel" table="PERFO_ZBK_DFZ">
+
+      <composite-id>
+        <key-property name="DFZBBM" column="DFZBBM" type="string" />
+        <key-property name="OPERATOR" column="OPERATOR" type="string" />
+      </composite-id>
+      <property name="OPERTYPE" column="OPERTYPE" type="string" />
+
+    </class>
+</hibernate-mapping>
